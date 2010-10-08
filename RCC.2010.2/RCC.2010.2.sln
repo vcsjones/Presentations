@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01MutabilityCS", "01Mutability\01MutabilityCS.csproj", "{72F8496F-FC4F-4051-973B-893F3CDAD464}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "01MuabilityFS", "01MuabilityFS\01MuabilityFS.fsproj", "{E57AC19C-83EC-4203-AB30-9E721D10C168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02ImmutableAdditionCS", "02ImmutableAdditionCS\02ImmutableAdditionCS.csproj", "{3228FA21-BD47-4504-8F14-11152CD20BAE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "02ImmutableAdditionFS", "02ImmutableAdditionFS\02ImmutableAdditionFS.fsproj", "{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72F8496F-FC4F-4051-973B-893F3CDAD464}.Debug|x86.ActiveCfg = Debug|x86
+		{72F8496F-FC4F-4051-973B-893F3CDAD464}.Debug|x86.Build.0 = Debug|x86
+		{72F8496F-FC4F-4051-973B-893F3CDAD464}.Release|x86.ActiveCfg = Release|x86
+		{72F8496F-FC4F-4051-973B-893F3CDAD464}.Release|x86.Build.0 = Release|x86
+		{E57AC19C-83EC-4203-AB30-9E721D10C168}.Debug|x86.ActiveCfg = Debug|x86
+		{E57AC19C-83EC-4203-AB30-9E721D10C168}.Debug|x86.Build.0 = Debug|x86
+		{E57AC19C-83EC-4203-AB30-9E721D10C168}.Release|x86.ActiveCfg = Release|x86
+		{E57AC19C-83EC-4203-AB30-9E721D10C168}.Release|x86.Build.0 = Release|x86
+		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Debug|x86.ActiveCfg = Debug|x86
+		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Debug|x86.Build.0 = Debug|x86
+		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Release|x86.ActiveCfg = Release|x86
+		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Release|x86.Build.0 = Release|x86
+		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Debug|x86.ActiveCfg = Debug|x86
+		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Debug|x86.Build.0 = Debug|x86
+		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Release|x86.ActiveCfg = Release|x86
+		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
