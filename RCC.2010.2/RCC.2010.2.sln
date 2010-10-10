@@ -5,9 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01MutabilityCS", "01Mutabil
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "01MuabilityFS", "01MuabilityFS\01MuabilityFS.fsproj", "{E57AC19C-83EC-4203-AB30-9E721D10C168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02ImmutableAdditionCS", "02ImmutableAdditionCS\02ImmutableAdditionCS.csproj", "{3228FA21-BD47-4504-8F14-11152CD20BAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{3D3BA1F8-37A5-4596-BEF3-B3127EC21E09}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "02ImmutableAdditionFS", "02ImmutableAdditionFS\02ImmutableAdditionFS.fsproj", "{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RecursionFS", "RecursionFS\RecursionFS.fsproj", "{83B6BD8B-25F1-4D80-83FA-EFDCC0A456EA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SyntaxExamples", "SyntaxExamples\SyntaxExamples.fsproj", "{5EDF6FB5-E9D2-4892-B6A0-6C6A5BCD61F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +25,18 @@ Global
 		{E57AC19C-83EC-4203-AB30-9E721D10C168}.Debug|x86.Build.0 = Debug|x86
 		{E57AC19C-83EC-4203-AB30-9E721D10C168}.Release|x86.ActiveCfg = Release|x86
 		{E57AC19C-83EC-4203-AB30-9E721D10C168}.Release|x86.Build.0 = Release|x86
-		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Debug|x86.ActiveCfg = Debug|x86
-		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Debug|x86.Build.0 = Debug|x86
-		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Release|x86.ActiveCfg = Release|x86
-		{3228FA21-BD47-4504-8F14-11152CD20BAE}.Release|x86.Build.0 = Release|x86
-		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Debug|x86.ActiveCfg = Debug|x86
-		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Debug|x86.Build.0 = Debug|x86
-		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Release|x86.ActiveCfg = Release|x86
-		{3F4A3DFB-388E-4A78-8310-3491F1ABED8F}.Release|x86.Build.0 = Release|x86
+		{3D3BA1F8-37A5-4596-BEF3-B3127EC21E09}.Debug|x86.ActiveCfg = Debug|x86
+		{3D3BA1F8-37A5-4596-BEF3-B3127EC21E09}.Debug|x86.Build.0 = Debug|x86
+		{3D3BA1F8-37A5-4596-BEF3-B3127EC21E09}.Release|x86.ActiveCfg = Release|x86
+		{3D3BA1F8-37A5-4596-BEF3-B3127EC21E09}.Release|x86.Build.0 = Release|x86
+		{83B6BD8B-25F1-4D80-83FA-EFDCC0A456EA}.Debug|x86.ActiveCfg = Debug|x86
+		{83B6BD8B-25F1-4D80-83FA-EFDCC0A456EA}.Debug|x86.Build.0 = Debug|x86
+		{83B6BD8B-25F1-4D80-83FA-EFDCC0A456EA}.Release|x86.ActiveCfg = Release|x86
+		{83B6BD8B-25F1-4D80-83FA-EFDCC0A456EA}.Release|x86.Build.0 = Release|x86
+		{5EDF6FB5-E9D2-4892-B6A0-6C6A5BCD61F4}.Debug|x86.ActiveCfg = Debug|x86
+		{5EDF6FB5-E9D2-4892-B6A0-6C6A5BCD61F4}.Debug|x86.Build.0 = Debug|x86
+		{5EDF6FB5-E9D2-4892-B6A0-6C6A5BCD61F4}.Release|x86.ActiveCfg = Release|x86
+		{5EDF6FB5-E9D2-4892-B6A0-6C6A5BCD61F4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
