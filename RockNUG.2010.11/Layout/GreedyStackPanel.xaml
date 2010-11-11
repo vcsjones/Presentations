@@ -1,0 +1,17 @@
+﻿<Window x:Class="StoryBoards.NonGreedy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NonGreedy" Height="600" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Margin="3">
+            <Button>Greedy Horizontal</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="3">
+            <Button>Greedy Vertical</Button>
+        </StackPanel>
+    </Grid>
+</Window>
