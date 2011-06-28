@@ -1,0 +1,21 @@
+﻿<Window x:Class="BadEncodingProblem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:l="clr-namespace:BadEncodingProblem" Title="MainWindow" Height="350" Width="525">
+<Window.Resources>
+        <l:ToHexConverter x:Key="ToHexConverter" />
+    </Window.Resources>
+    <ScrollViewer>
+        <StackPanel Margin="10" Keyboard.KeyUp="StackPanel_KeyUp">
+            <Label>Input 1:</Label>
+            <TextBox TextWrapping="Wrap" x:Name="TextInput1" TabIndex="0" />
+            <Label>Hash 1:</Label>
+            <TextBox MinLines="3" TextWrapping="Wrap" IsReadOnly="True" x:Name="HexText1" Text="{Binding ElementName=TextInput1, Path=Text, Converter={StaticResource ToHexConverter}}" />
+            <Label>Input 2:</Label>
+            <TextBox TextWrapping="Wrap" x:Name="TextInput2" TabIndex="1" />
+            <Label>Hash 2:</Label>
+            <TextBox MinLines="3" TextWrapping="Wrap" IsReadOnly="True" x:Name="HexText2" Text="{Binding ElementName=TextInput2, Path=Text, Converter={StaticResource ToHexConverter}}" />
+            <Label>Passwords Match?</Label>
+            <TextBlock Name="PasswordMatch">Yes</TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
