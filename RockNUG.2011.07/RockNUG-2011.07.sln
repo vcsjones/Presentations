@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockingUIThread", "BlockingUIThread\BlockingUIThread.csproj", "{03BDADA9-B265-4B75-BBD5-5BE4B4334976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpingWindowMessages", "PumpingWindowMessages\PumpingWindowMessages.csproj", "{8C310B24-AFC3-4F59-B638-730CA39769E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteContentDownloader", "WebsiteContentDownloader\WebsiteContentDownloader.csproj", "{46C32FE0-CBA2-408D-83A0-420F3303CC19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partitioner", "Partitioner\Partitioner.csproj", "{7C519575-A1F5-448C-9304-2C6E025F0C95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03BDADA9-B265-4B75-BBD5-5BE4B4334976}.Debug|x86.ActiveCfg = Debug|x86
+		{03BDADA9-B265-4B75-BBD5-5BE4B4334976}.Debug|x86.Build.0 = Debug|x86
+		{03BDADA9-B265-4B75-BBD5-5BE4B4334976}.Release|x86.ActiveCfg = Release|x86
+		{03BDADA9-B265-4B75-BBD5-5BE4B4334976}.Release|x86.Build.0 = Release|x86
+		{8C310B24-AFC3-4F59-B638-730CA39769E3}.Debug|x86.ActiveCfg = Debug|x86
+		{8C310B24-AFC3-4F59-B638-730CA39769E3}.Debug|x86.Build.0 = Debug|x86
+		{8C310B24-AFC3-4F59-B638-730CA39769E3}.Release|x86.ActiveCfg = Release|x86
+		{8C310B24-AFC3-4F59-B638-730CA39769E3}.Release|x86.Build.0 = Release|x86
+		{46C32FE0-CBA2-408D-83A0-420F3303CC19}.Debug|x86.ActiveCfg = Debug|x86
+		{46C32FE0-CBA2-408D-83A0-420F3303CC19}.Debug|x86.Build.0 = Debug|x86
+		{46C32FE0-CBA2-408D-83A0-420F3303CC19}.Release|x86.ActiveCfg = Release|x86
+		{46C32FE0-CBA2-408D-83A0-420F3303CC19}.Release|x86.Build.0 = Release|x86
+		{7C519575-A1F5-448C-9304-2C6E025F0C95}.Debug|x86.ActiveCfg = Debug|x86
+		{7C519575-A1F5-448C-9304-2C6E025F0C95}.Debug|x86.Build.0 = Debug|x86
+		{7C519575-A1F5-448C-9304-2C6E025F0C95}.Release|x86.ActiveCfg = Release|x86
+		{7C519575-A1F5-448C-9304-2C6E025F0C95}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

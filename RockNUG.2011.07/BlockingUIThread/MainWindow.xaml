@@ -1,0 +1,13 @@
+﻿<Window x:Class="BlockingUIThread.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label>Clicking this button will result in a long running process.</Label>
+            <Button Margin="7" MaxWidth="200" MinHeight="100" MinWidth="100" Click="DoStuffClick">Do Stuff</Button>
+            <Label x:Name="ResultLabel" />
+            <ProgressBar IsIndeterminate="True" x:Name="MyProgressBar" Foreground="Red" Height="30" Visibility="Hidden" />
+        </StackPanel>
+    </Grid>
+</Window>
