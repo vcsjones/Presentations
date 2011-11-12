@@ -1,0 +1,27 @@
+﻿@model Mvc4Demo.Models.NewsModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<div data-role="collapsible">
+<h2>Google News</h2>
+<ul>
+@foreach(var googleNews in Model.GoogleNews)
+{
+    <li>
+        <a href="@googleNews.Link">@googleNews.Title</a>
+    </li>
+}
+</ul>
+</div>
+<div data-role="collapsible">
+<h2>Yahoo News</h2>
+<ul>
+@foreach(var yahooNews in Model.YahooNews)
+{
+    <li>
+        <a href="@yahooNews.Link">@yahooNews.Title</a>
+    </li>
+}
+</ul>
+</div>
