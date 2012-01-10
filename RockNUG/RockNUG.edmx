@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RockNUGModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="RockNUGModelStoreContainer">
+          <EntitySet Name="Release" EntityType="RockNUGModel.Store.Release" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Session" EntityType="RockNUGModel.Store.Session" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Speaker" EntityType="RockNUGModel.Store.Speaker" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Session_ReleaseID__Release_ID" Association="RockNUGModel.Store.FK_Session_ReleaseID__Release_ID">
+            <End Role="Release" EntitySet="Release" />
+            <End Role="Session" EntitySet="Session" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_SpeakerID__Speaker_ID" Association="RockNUGModel.Store.FK_Session_SpeakerID__Speaker_ID">
+            <End Role="Speaker" EntitySet="Speaker" />
+            <End Role="Session" EntitySet="Session" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Release">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Version" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Date" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SpeakerID" Type="int" Nullable="false" />
+          <Property Name="ReleaseID" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="2000" />
+          <Property Name="Abstract" Type="nvarchar(max)" />
+          <Property Name="Begin" Type="time" Nullable="false" />
+          <Property Name="End" Type="time" Nullable="false" />
+          <Property Name="Type" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Speaker">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="200" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Bio" Type="nvarchar(max)" />
+          <Property Name="Mugshot" Type="varbinary(max)" />
+          <Property Name="Website" Type="varchar" MaxLength="1000" />
+          <Property Name="Twitter" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <Association Name="FK_Session_ReleaseID__Release_ID">
+          <End Role="Release" Type="RockNUGModel.Store.Release" Multiplicity="1" />
+          <End Role="Session" Type="RockNUGModel.Store.Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Release">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="ReleaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_SpeakerID__Speaker_ID">
+          <End Role="Speaker" Type="RockNUGModel.Store.Speaker" Multiplicity="1" />
+          <End Role="Session" Type="RockNUGModel.Store.Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Speaker">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="SpeakerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RockNUGModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="RockNUGEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Releases" EntityType="RockNUGModel.Release" />
+          <EntitySet Name="Sessions" EntityType="RockNUGModel.Session" />
+          <EntitySet Name="Speakers" EntityType="RockNUGModel.Speaker" />
+          <AssociationSet Name="FK_Session_ReleaseID__Release_ID" Association="RockNUGModel.FK_Session_ReleaseID__Release_ID">
+            <End Role="Release" EntitySet="Releases" />
+            <End Role="Session" EntitySet="Sessions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_SpeakerID__Speaker_ID" Association="RockNUGModel.FK_Session_SpeakerID__Speaker_ID">
+            <End Role="Speaker" EntitySet="Speakers" />
+            <End Role="Session" EntitySet="Sessions" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Release">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Version" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <NavigationProperty Name="Sessions" Relationship="RockNUGModel.FK_Session_ReleaseID__Release_ID" FromRole="Release" ToRole="Session" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="SpeakerID" Nullable="false" />
+          <Property Type="Int32" Name="ReleaseID" Nullable="false" />
+          <Property Type="String" Name="Abstract" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Time" Name="Begin" Nullable="false" />
+          <Property Type="Time" Name="End" Nullable="false" />
+          <NavigationProperty Name="Release" Relationship="RockNUGModel.FK_Session_ReleaseID__Release_ID" FromRole="Session" ToRole="Release" />
+          <NavigationProperty Name="Speaker" Relationship="RockNUGModel.FK_Session_SpeakerID__Speaker_ID" FromRole="Session" ToRole="Speaker" />
+          <Property Type="Int32" Name="Type" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Speaker">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FirstName" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Bio" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="Mugshot" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="Website" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Twitter" MaxLength="15" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Sessions" Relationship="RockNUGModel.FK_Session_SpeakerID__Speaker_ID" FromRole="Speaker" ToRole="Session" />
+        </EntityType>
+        <Association Name="FK_Session_ReleaseID__Release_ID">
+          <End Type="RockNUGModel.Release" Role="Release" Multiplicity="1" />
+          <End Type="RockNUGModel.Session" Role="Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Release">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="ReleaseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_SpeakerID__Speaker_ID">
+          <End Type="RockNUGModel.Speaker" Role="Speaker" Multiplicity="1" />
+          <End Type="RockNUGModel.Session" Role="Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Speaker">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="SpeakerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RockNUGModelStoreContainer" CdmEntityContainer="RockNUGEntities" >
+          <EntitySetMapping Name="Releases">
+            <EntityTypeMapping TypeName="RockNUGModel.Release">
+              <MappingFragment StoreEntitySet="Release">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sessions">
+            <EntityTypeMapping TypeName="RockNUGModel.Session">
+              <MappingFragment StoreEntitySet="Session">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="End" ColumnName="End" />
+                <ScalarProperty Name="Begin" ColumnName="Begin" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="ReleaseID" ColumnName="ReleaseID" />
+                <ScalarProperty Name="SpeakerID" ColumnName="SpeakerID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Speakers">
+            <EntityTypeMapping TypeName="RockNUGModel.Speaker">
+              <MappingFragment StoreEntitySet="Speaker">
+                <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Mugshot" ColumnName="Mugshot" />
+                <ScalarProperty Name="Bio" ColumnName="Bio" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="RockNUG" >
+        <EntityTypeShape EntityType="RockNUGModel.Release" Width="1.5" PointX="0.75" PointY="1.375" Height="1.7879850260416668" />
+        <EntityTypeShape EntityType="RockNUGModel.Session" Width="1.5" PointX="3" PointY="1" Height="2.5571907552083326" />
+        <EntityTypeShape EntityType="RockNUGModel.Speaker" Width="1.5" PointX="0.75" PointY="5" Height="2.5571907552083317" />
+        <AssociationConnector Association="RockNUGModel.FK_Session_ReleaseID__Release_ID" >
+          <ConnectorPoint PointX="2.25" PointY="2.2689925130208333" />
+          <ConnectorPoint PointX="3" PointY="2.2689925130208333" />
+        </AssociationConnector>
+        <AssociationConnector Association="RockNUGModel.FK_Session_SpeakerID__Speaker_ID" >
+          <ConnectorPoint PointX="2.25" PointY="6.2785953776041659" />
+          <ConnectorPoint PointX="3.75" PointY="6.2785953776041659" />
+          <ConnectorPoint PointX="3.75" PointY="3.5571907552083326" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
