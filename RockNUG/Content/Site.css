@@ -1,0 +1,156 @@
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #400040;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+.header
+{
+    background-color: #FFF;
+    color: #000;
+    border-top-left-radius:     20px 20px;  
+    border-top-right-radius:    20px 20px;
+    padding: 0px 10px;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.nav
+{
+    float: right;
+}
+
+.main
+{
+    background-color: #FFF;
+    color: #000;
+    border-bottom-left-radius:     20px 20px;  
+    border-bottom-right-radius:    20px 20px;
+    padding: 0px 10px;
+    margin: 20px;
+    margin-top: 0px;
+    clear: both;
+}
+
+h1
+{
+    font-size: 42pt;
+    color: #B3BD00;
+    margin-bottom: 0px;
+    
+}
+
+h2
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav .row
+{
+
+}
+
+.nav .row a
+{
+    float: left;
+    width: 75px;
+    height: 45px;
+    border: black 1px solid;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #B3BD00;
+    display: block;
+    color: white;
+    padding-top: 30px;
+}
+
+.nav .row a:hover
+{
+    background-color: #400040;
+}
+
+.footer
+{
+    background-color: #400040;
+    height: 75px;
+    color: #FFF;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}

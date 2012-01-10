@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+*.suo
+*.user
+_ReSharper.RockNUG
+obj
+bin
