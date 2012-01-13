@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAES", "SimpleAES\SimpleAES.csproj", "{EDD84585-E513-49B1-8845-34E049F3EAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodingSample", "EncodingSample\EncodingSample.csproj", "{90D535F1-7B4D-4147-8221-2013889293CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPAPIAES", "DPAPIAES\DPAPIAES.csproj", "{3ADC83CE-37D2-4131-BE4D-DE80BA45352B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDBAESExample", "PDBAESExample\PDBAESExample.csproj", "{9F6E3702-86E4-478B-B300-099E1C4C7E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyIVSample", "KeyIVSample\KeyIVSample.csproj", "{1E5CD328-2376-4855-AAEF-AC2DEEB709FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashExample", "HashExample\HashExample.csproj", "{8B8FDCFA-2734-4A02-A498-64D6528BF4BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadEncodingProblem", "BadEncodingProblem\BadEncodingProblem.csproj", "{3729784E-C807-4006-8651-7DA2BB9AC36C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDD84585-E513-49B1-8845-34E049F3EAF2}.Debug|x86.ActiveCfg = Debug|x86
+		{EDD84585-E513-49B1-8845-34E049F3EAF2}.Debug|x86.Build.0 = Debug|x86
+		{EDD84585-E513-49B1-8845-34E049F3EAF2}.Release|x86.ActiveCfg = Release|x86
+		{EDD84585-E513-49B1-8845-34E049F3EAF2}.Release|x86.Build.0 = Release|x86
+		{90D535F1-7B4D-4147-8221-2013889293CD}.Debug|x86.ActiveCfg = Debug|x86
+		{90D535F1-7B4D-4147-8221-2013889293CD}.Debug|x86.Build.0 = Debug|x86
+		{90D535F1-7B4D-4147-8221-2013889293CD}.Release|x86.ActiveCfg = Release|x86
+		{90D535F1-7B4D-4147-8221-2013889293CD}.Release|x86.Build.0 = Release|x86
+		{3ADC83CE-37D2-4131-BE4D-DE80BA45352B}.Debug|x86.ActiveCfg = Debug|x86
+		{3ADC83CE-37D2-4131-BE4D-DE80BA45352B}.Debug|x86.Build.0 = Debug|x86
+		{3ADC83CE-37D2-4131-BE4D-DE80BA45352B}.Release|x86.ActiveCfg = Release|x86
+		{3ADC83CE-37D2-4131-BE4D-DE80BA45352B}.Release|x86.Build.0 = Release|x86
+		{9F6E3702-86E4-478B-B300-099E1C4C7E7D}.Debug|x86.ActiveCfg = Debug|x86
+		{9F6E3702-86E4-478B-B300-099E1C4C7E7D}.Debug|x86.Build.0 = Debug|x86
+		{9F6E3702-86E4-478B-B300-099E1C4C7E7D}.Release|x86.ActiveCfg = Release|x86
+		{9F6E3702-86E4-478B-B300-099E1C4C7E7D}.Release|x86.Build.0 = Release|x86
+		{1E5CD328-2376-4855-AAEF-AC2DEEB709FA}.Debug|x86.ActiveCfg = Debug|x86
+		{1E5CD328-2376-4855-AAEF-AC2DEEB709FA}.Debug|x86.Build.0 = Debug|x86
+		{1E5CD328-2376-4855-AAEF-AC2DEEB709FA}.Release|x86.ActiveCfg = Release|x86
+		{1E5CD328-2376-4855-AAEF-AC2DEEB709FA}.Release|x86.Build.0 = Release|x86
+		{8B8FDCFA-2734-4A02-A498-64D6528BF4BA}.Debug|x86.ActiveCfg = Debug|x86
+		{8B8FDCFA-2734-4A02-A498-64D6528BF4BA}.Debug|x86.Build.0 = Debug|x86
+		{8B8FDCFA-2734-4A02-A498-64D6528BF4BA}.Release|x86.ActiveCfg = Release|x86
+		{8B8FDCFA-2734-4A02-A498-64D6528BF4BA}.Release|x86.Build.0 = Release|x86
+		{3729784E-C807-4006-8651-7DA2BB9AC36C}.Debug|x86.ActiveCfg = Debug|x86
+		{3729784E-C807-4006-8651-7DA2BB9AC36C}.Debug|x86.Build.0 = Debug|x86
+		{3729784E-C807-4006-8651-7DA2BB9AC36C}.Release|x86.ActiveCfg = Release|x86
+		{3729784E-C807-4006-8651-7DA2BB9AC36C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
