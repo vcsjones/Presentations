@@ -1,0 +1,21 @@
+﻿@using RockNUG.Models.Home.Index
+@model Session
+
+<div>
+    @Html.DisplayFor(m => m.Begin) - @Html.DisplayFor(m => m.End)
+    @{
+        switch (Model.Type)
+        {
+            case 2:
+                @: Feature Presentation @Model.Title by @Model.Speaker.FirstName @Model.Speaker.LastName
+break;
+            case 1:
+                @String.Format("Pizza / Announcements")
+break;
+            case 0:
+                 @: N00b Presentations @Model.Title by @Model.Speaker.FirstName @Model.Speaker.LastName
+break;
+        }
+    }
+            
+</div>

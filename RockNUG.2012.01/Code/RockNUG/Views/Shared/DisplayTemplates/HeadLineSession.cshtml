@@ -1,0 +1,13 @@
+﻿@using RockNUG.Models.Home.Index
+@model Session
+
+<div class="headline-speaker">
+    @if (!Request.Browser.IsMobileDevice)
+    {
+        <img alt="Speaker Image" src="@Url.Action("Mugshot", "Home", new {id = Model.Speaker.ID})" style="float: left;"/>
+    }
+        <h2>@Html.DisplayFor(m => m.Speaker.FirstName) @Html.DisplayFor(m => m.Speaker.LastName)</h2>
+        <h3>@Html.DisplayFor(m => m.Title)</h3>
+        <p>@Html.DisplayFor(m => m.Abstract)</p>
+    <div style="clear: both;"></div>
+</div>

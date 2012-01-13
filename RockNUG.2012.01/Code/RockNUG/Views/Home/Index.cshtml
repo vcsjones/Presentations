@@ -1,0 +1,27 @@
+﻿@using RockNUG.Models.Home.Index
+@model Release
+@{
+    ViewBag.Title = "Home";
+}
+
+@if (Model == null)
+{
+    <h2>Next Release</h2>
+    <p>The next release has not been scheduled yet. Got an idea for a session? Submit one @Html.ActionLink("here", "SubmitSession").</p>
+}
+else
+{
+    <h2>Release @Html.DisplayFor(x => x.Version)</h2>
+    @Html.DisplayFor(m => m.Date)
+    @Html.DisplayFor(m => m.FirstSession)<text> - </text>@Html.DisplayFor(m => m.LastSession)
+    @Html.DisplayFor(m => m.HeadLineSession, "HeadLineSession")
+    @Html.DisplayFor(m => m.AllSessions)
+
+    if (Model.NextSession != null)
+    {
+        <div class="next-session">
+            <h2>Next Session</h2>
+            @Html.DisplayFor(m => m.NextSession, "HeadLineSession")
+        </div>
+    }
+}
