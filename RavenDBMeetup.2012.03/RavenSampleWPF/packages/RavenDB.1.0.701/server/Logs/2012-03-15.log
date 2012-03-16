@@ -1,0 +1,1118 @@
+time,logger,level,message,exception
+2012-03-15 12:47:04.0034,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 96
+  CacheMemoryLimit    = 134217728
+  PollingInterval     = 00:02:00",
+2012-03-15 12:47:04.0277,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 65536
+  DatabasePageSize = 4096",
+2012-03-15 12:47:04.4688,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Backup/Status' was not found,
+2012-03-15 12:47:04.5117,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2012-03-15 12:47:04.5117,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2012-03-15 13:19:08.5762,Raven.Database.Indexing.WorkContext,Debug,Stopping background workers,
+time,logger,level,message,exception
+2012-03-15 17:23:24.5654,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 96
+  CacheMemoryLimit    = 134217728
+  PollingInterval     = 00:02:00",
+2012-03-15 17:23:24.5965,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 65536
+  DatabasePageSize = 4096",
+2012-03-15 17:23:24.7680,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Backup/Status' was not found,
+2012-03-15 17:23:24.7992,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:23:24.7992,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:33:33.6671,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was not found,
+2012-03-15 17:33:33.6886,Raven.Database.Server.HttpServer,Debug,Request #   1: GET     -    30 ms - <default>  - 404 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:33:33.7158,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:33:33.7158,Raven.Database.Server.HttpServer,Debug,Request #   2: GET     -    77 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:33:33.8336,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: False, ",
+2012-03-15 17:33:33.8336,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 1 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 17:33:33.8336,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0200-0000-000000000001,
+2012-03-15 17:33:33.8395,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:33:33.8901,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:33:33.9359,Raven.Database.Server.HttpServer,Debug,Request #   3: PUT     -   154 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:33:33.9797,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/1', update: False, ",
+2012-03-15 17:33:33.9797,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/1 with etag 00000000-0000-0200-0000-000000000002,
+2012-03-15 17:33:33.9797,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 2 because: PUT ToDoItems/1,
+2012-03-15 17:33:33.9797,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0054646,
+2012-03-15 17:33:34.0167,Raven.Database.Server.HttpServer,Debug,Request #   4: POST    -    39 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 17:33:34.0167,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/1
+",
+2012-03-15 17:33:34.0167,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 2, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:33:34.0167,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:34:02.5382,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 17:34:02.6054,Raven.Database.Server.HttpServer,Debug,Request #   5: GET     -    67 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:34:02.6054,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 17:34:02.6054,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 3 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 17:34:02.6054,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0200-0000-000000000003,
+2012-03-15 17:34:02.6054,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:34:02.6327,Raven.Database.Server.HttpServer,Debug,Request #   6: PUT     -    22 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:34:02.6327,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:34:02.7495,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:34:02.7495,Raven.Database.Server.HttpServer,Debug,Request #   7: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:34:02.7836,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/33', update: False, ",
+2012-03-15 17:34:02.7836,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/33 with etag 00000000-0000-0200-0000-000000000004,
+2012-03-15 17:34:02.7836,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 4 because: PUT ToDoItems/33,
+2012-03-15 17:34:02.7836,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0128695,
+2012-03-15 17:34:02.8070,Raven.Database.Server.HttpServer,Debug,Request #   8: POST    -    55 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 17:34:02.8070,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/33
+",
+2012-03-15 17:34:02.8109,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 4, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:34:02.8109,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:45:04.8523,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:45:04.8523,Raven.Database.Server.HttpServer,Debug,Request #   9: GET     -     3 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:45:04.8523,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 17:45:04.8933,Raven.Database.Server.HttpServer,Debug,Request #  10: GET     -    36 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:45:04.8933,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 17:45:04.8933,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 5 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 17:45:04.8933,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:45:04.8933,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0200-0000-000000000005,
+2012-03-15 17:45:04.9127,Raven.Database.Server.HttpServer,Debug,Request #  11: PUT     -    11 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:45:04.9127,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:45:05.0189,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/65', update: False, ",
+2012-03-15 17:45:05.0189,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/65 with etag 00000000-0000-0200-0000-000000000006,
+2012-03-15 17:45:05.0189,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 6 because: PUT ToDoItems/65,
+2012-03-15 17:45:05.0189,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0046499,
+2012-03-15 17:45:05.0452,Raven.Database.Server.HttpServer,Debug,Request #  12: POST    -    26 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 17:45:05.0598,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/65
+",
+2012-03-15 17:45:05.0617,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 6, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:45:05.0617,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:45:06.7828,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 17:45:06.7828,Raven.Database.Server.HttpServer,Debug,Request #  13: GET     -     1 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:45:06.7828,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:45:06.7828,Raven.Database.Server.HttpServer,Debug,Request #  14: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:45:06.7828,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 17:45:06.7828,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 7 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 17:45:06.7828,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0200-0000-000000000007,
+2012-03-15 17:45:06.7828,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:45:06.7828,Raven.Database.Server.HttpServer,Debug,Request #  15: PUT     -     3 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:45:06.7828,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:45:06.7995,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/97', update: False, ",
+2012-03-15 17:45:06.7995,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/97 with etag 00000000-0000-0200-0000-000000000008,
+2012-03-15 17:45:06.7995,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 8 because: PUT ToDoItems/97,
+2012-03-15 17:45:06.7995,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0030859,
+2012-03-15 17:45:06.7995,Raven.Database.Server.HttpServer,Debug,Request #  16: POST    -    10 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 17:45:06.7995,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/97
+",
+2012-03-15 17:45:06.7995,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 8, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:45:06.7995,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:45:09.2526,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:45:09.2526,Raven.Database.Server.HttpServer,Debug,Request #  17: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:45:09.2526,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 17:45:09.2526,Raven.Database.Server.HttpServer,Debug,Request #  18: GET     -     1 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:45:09.2526,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 17:45:09.2526,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 9 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 17:45:09.2526,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0200-0000-000000000009,
+2012-03-15 17:45:09.2526,Raven.Database.Server.HttpServer,Debug,Request #  19: PUT     -     4 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 17:45:09.2653,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:45:09.2653,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:45:09.2653,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/129', update: False, ",
+2012-03-15 17:45:09.2653,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/129 with etag 00000000-0000-0200-0000-00000000000a,
+2012-03-15 17:45:09.2653,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 10 because: PUT ToDoItems/129,
+2012-03-15 17:45:09.2653,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0049480,
+2012-03-15 17:45:09.2653,Raven.Database.Server.HttpServer,Debug,Request #  20: POST    -     9 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 17:45:09.2653,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/129
+",
+2012-03-15 17:45:09.2653,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 10, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:45:09.2653,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 10, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:51:56.2335,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:51:56.2491,Raven.Database.Server.HttpServer,Debug,Request #  21: GET     -     6 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:51:56.5297,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fToDoItems:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-03-15 17:51:56.5608,Raven.Database.Indexing.IndexStorage,Info,Creating index Temp/ToDoItems with encoded name Temp/ToDoItems,
+2012-03-15 17:51:56.6388,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/ToDoItems,
+2012-03-15 17:51:56.6700,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 11 because: PUT INDEX Temp/ToDoItems,
+2012-03-15 17:51:56.6856,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 6 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-03-15 17:51:56.7012,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 17:51:56.7012,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 5 documents remained",
+2012-03-15 17:51:56.7167,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 5 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0000-0000-000000000000",
+2012-03-15 17:51:56.7167,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Indexing 5 documents for index: Temp/ToDoItems. (ToDoItems/1,ToDoItems/33,ToDoItems/65,ToDoItems/97,ToDoItems/129)",
+2012-03-15 17:51:56.7323,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 11, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:51:56.7792,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:51:56.9038,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:51:57.0129,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:51:57.0441,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/1 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/1
+",
+2012-03-15 17:51:57.0909,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/33 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/33
+",
+2012-03-15 17:51:57.0909,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/65 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/65
+",
+2012-03-15 17:51:57.0909,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/97 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/97
+",
+2012-03-15 17:51:57.0909,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/129 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/129
+",
+2012-03-15 17:51:57.1221,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:51:57.1688,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 5 documents for Temp/ToDoItems,
+2012-03-15 17:51:57.1844,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 12 because: WORK BY IndexingExecuter,
+2012-03-15 17:51:57.1844,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 12, for: IndexingExecuter, will wait for additional work",
+2012-03-15 17:51:57.2001,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 12, for: ReducingExecuter, will wait for additional work",
+2012-03-15 17:51:57.2312,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:51:57.2312,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:51:57.2312,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:51:57.2312,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:51:57.2312,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:51:57.2312,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:51:57.2780,Raven.Database.Server.HttpServer,Debug,"Request #  22: GET     - 1,047 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None",
+2012-03-15 17:52:29.9168,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:52:29.9168,Raven.Database.Server.HttpServer,Debug,Request #  23: GET     -     5 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:52:29.9635,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:52:29.9635,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:52:29.9635,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:52:29.9635,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:52:29.9635,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:52:29.9635,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:52:30.0727,Raven.Database.Server.HttpServer,Debug,Request #  24: GET     -   109 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:53:31.1843,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:53:31.1843,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:53:31.1843,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:53:31.1843,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:53:31.1843,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:53:31.1843,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:53:31.2466,Raven.Database.Server.HttpServer,Debug,Request #  25: GET     -    68 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:53:31.2778,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:53:31.2778,Raven.Database.Server.HttpServer,Debug,Request #  26: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:53:43.5748,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:53:43.5903,Raven.Database.Server.HttpServer,Debug,Request #  27: GET     -     5 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:53:43.5903,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:53:43.5903,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:53:43.5903,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:53:43.5903,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:53:43.5903,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:53:43.5903,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:53:43.6995,Raven.Database.Server.HttpServer,Debug,Request #  28: GET     -   106 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:54:00.3790,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:54:00.3790,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:54:00.3790,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:54:00.3790,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:54:00.3790,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:54:00.3790,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:54:00.3946,Raven.Database.Server.HttpServer,Debug,Request #  29: GET     -     9 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:54:00.4726,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:54:00.4726,Raven.Database.Server.HttpServer,Debug,Request #  30: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:55:01.7815,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:55:01.7815,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:55:01.7815,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:55:01.7815,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:55:01.7815,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:55:01.7815,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:55:01.8439,Raven.Database.Server.HttpServer,Debug,Request #  31: GET     -    63 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:55:01.8750,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:55:01.8750,Raven.Database.Server.HttpServer,Debug,Request #  32: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:55:20.6163,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:55:20.6163,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:55:20.6163,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:55:20.6163,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:55:20.6163,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:55:20.6163,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:55:20.6163,Raven.Database.Server.HttpServer,Debug,Request #  33: GET     -     7 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:55:20.6942,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:55:20.6942,Raven.Database.Server.HttpServer,Debug,Request #  34: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:55:39.1896,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:55:39.1896,Raven.Database.Server.HttpServer,Debug,Request #  35: GET     -     3 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 17:55:39.2052,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:55:39.2052,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:55:39.2052,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:55:39.2052,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:55:39.2052,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:55:39.2052,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:55:39.3143,Raven.Database.Server.HttpServer,Debug,Request #  36: GET     -   115 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:58:01.4263,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 17:58:01.4263,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 17:58:01.4263,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 17:58:01.4263,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 17:58:01.4263,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 17:58:01.4263,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 17:58:01.4263,Raven.Database.Server.HttpServer,Debug,Request #  37: GET     -     6 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 17:58:01.5043,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 17:58:01.5510,Raven.Database.Server.HttpServer,Debug,Request #  38: GET     -    36 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:02:36.9287,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:02:36.9441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:02:36.9441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:02:36.9441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 18:02:36.9441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 18:02:36.9441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 18:02:37.0377,Raven.Database.Server.HttpServer,Debug,Request #  39: GET     -   100 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:02:37.0689,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:02:37.0689,Raven.Database.Server.HttpServer,Debug,Request #  40: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:04:12.4159,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:04:12.4159,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:04:12.4159,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:04:12.4159,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 18:04:12.4159,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 18:04:12.4159,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 18:04:12.4315,Raven.Database.Server.HttpServer,Debug,Request #  41: GET     -    12 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:04:12.5095,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:04:12.5095,Raven.Database.Server.HttpServer,Debug,Request #  42: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:05:39.4111,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:05:39.4111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:05:39.4111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:05:39.4111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 18:05:39.4111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 18:05:39.4111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 18:05:39.4735,Raven.Database.Server.HttpServer,Debug,Request #  43: GET     -    63 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:05:39.4890,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:05:39.4890,Raven.Database.Server.HttpServer,Debug,Request #  44: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:06:20.7534,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:06:20.7534,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:06:20.7534,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:06:20.7534,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 18:06:20.7534,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 18:06:20.7534,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 18:06:20.7534,Raven.Database.Server.HttpServer,Debug,Request #  45: GET     -     8 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:06:20.8471,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:06:20.8471,Raven.Database.Server.HttpServer,Debug,Request #  46: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:06:46.2412,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:06:46.2412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:06:46.2412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:06:46.2412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 18:06:46.2412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 18:06:46.2412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 18:06:46.2412,Raven.Database.Server.HttpServer,Debug,Request #  47: GET     -     9 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:06:46.3191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:06:46.3191,Raven.Database.Server.HttpServer,Debug,Request #  48: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:10:08.2986,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:10:08.2986,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:10:08.2986,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:10:08.2986,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 18:10:08.2986,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 18:10:08.2986,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 18:10:08.3609,Raven.Database.Server.HttpServer,Debug,Request #  49: GET     -    59 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:10:08.4233,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:10:08.4233,Raven.Database.Server.HttpServer,Debug,Request #  50: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:13:48.3472,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:13:48.3472,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:13:48.3472,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:13:48.3472,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 18:13:48.3472,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 18:13:48.3472,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 18:13:48.3940,Raven.Database.Server.HttpServer,Debug,Request #  51: GET     -    65 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:13:48.4719,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:13:48.4719,Raven.Database.Server.HttpServer,Debug,Request #  52: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+time,logger,level,message,exception
+2012-03-15 18:15:09.1947,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 96
+  CacheMemoryLimit    = 134217728
+  PollingInterval     = 00:02:00",
+2012-03-15 18:15:09.2103,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 65536
+  DatabasePageSize = 4096",
+2012-03-15 18:15:10.7548,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Backup/Status' was not found,
+2012-03-15 18:15:10.8004,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:15:10.8004,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:15:24.1139,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fToDoItems:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-03-15 18:15:24.2074,Raven.Database.Indexing.IndexStorage,Info,Creating index Temp/ToDoItems with encoded name Temp/ToDoItems,
+2012-03-15 18:15:24.2698,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/ToDoItems,
+2012-03-15 18:15:24.2698,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 1 because: PUT INDEX Temp/ToDoItems,
+2012-03-15 18:15:24.3009,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:15:24.3009,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:15:24.3009,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:15:24.4412,Raven.Database.Server.HttpServer,Debug,Request #   1: GET     -   618 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:15:24.4568,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:15:24.4568,Raven.Database.Server.HttpServer,Debug,Request #   2: GET     -     4 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:15:37.2558,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:15:37.3026,Raven.Database.Server.HttpServer,Debug,Request #   3: GET     -    53 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:16:07.6224,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:16:07.6847,Raven.Database.Server.HttpServer,Debug,Request #   4: GET     -    78 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:16:10.8590,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was not found,
+2012-03-15 18:16:10.8590,Raven.Database.Server.HttpServer,Debug,Request #   5: GET     -     1 ms - <default>  - 404 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:16:10.8590,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:16:10.8590,Raven.Database.Server.HttpServer,Debug,Request #   6: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:16:11.1433,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: False, ",
+2012-03-15 18:16:11.1433,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 2 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 18:16:11.1433,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:16:11.1638,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-03-15 18:16:11.1745,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 18:16:11.1745,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 18:16:11.1745,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000001, 3/15/2012 10:16:11 PM",
+2012-03-15 18:16:11.1745,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2012-03-15 18:16:11.1745,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:16:11.1745,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:16:11.2154,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0100-0000-000000000001,
+2012-03-15 18:16:11.2572,Raven.Database.Server.HttpServer,Debug,Request #   7: PUT     -   149 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:16:11.2855,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/1', update: False, ",
+2012-03-15 18:16:11.2855,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/1 with etag 00000000-0000-0100-0000-000000000002,
+2012-03-15 18:16:11.2855,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 4 because: PUT ToDoItems/1,
+2012-03-15 18:16:11.2855,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000001,
+2012-03-15 18:16:11.2855,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 18:16:11.2855,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0100-0000-000000000001",
+2012-03-15 18:16:11.2855,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/ToDoItems. (ToDoItems/1),
+2012-03-15 18:16:11.3235,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:16:11.3254,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0412429,
+2012-03-15 18:16:11.3254,Raven.Database.Server.HttpServer,Debug,Request #   8: POST    -    52 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 18:16:11.3254,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/1
+",
+2012-03-15 18:16:11.6185,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/1 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/1
+",
+2012-03-15 18:16:11.7276,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Temp/ToDoItems,
+2012-03-15 18:16:11.7276,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 5 because: WORK BY IndexingExecuter,
+2012-03-15 18:16:11.7276,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:16:11.7324,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:16:13.2048,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'int32s/0' was not found,
+2012-03-15 18:16:13.2048,Raven.Database.Server.HttpServer,Debug,Request #   9: GET     -     0 ms - <default>  - 404 - /docs/int32s/0,
+2012-03-15 18:17:17.9289,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:17:17.9289,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:17:17.9445,Raven.Database.Server.HttpServer,Debug,Request #  10: GET     -    31 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:17:18.0536,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:17:18.0536,Raven.Database.Server.HttpServer,Debug,Request #  11: GET     -     2 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:17:23.4309,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 18:17:23.4455,Raven.Database.Server.HttpServer,Debug,Request #  12: GET     -    15 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:17:23.4455,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:17:23.4455,Raven.Database.Server.HttpServer,Debug,Request #  13: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:17:23.4728,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 18:17:23.4728,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 6 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 18:17:23.4728,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:17:23.4728,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0100-0000-000000000003,
+2012-03-15 18:17:23.5078,Raven.Database.Server.HttpServer,Debug,Request #  14: PUT     -    37 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:17:23.5078,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000002,
+2012-03-15 18:17:23.5078,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 18:17:23.5078,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 18:17:23.5078,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000003, 3/15/2012 10:17:23 PM",
+2012-03-15 18:17:23.5078,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 7 because: WORK BY IndexingExecuter,
+2012-03-15 18:17:23.5078,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:17:23.5078,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:17:23.5477,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/33', update: False, ",
+2012-03-15 18:17:23.5477,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/33 with etag 00000000-0000-0100-0000-000000000004,
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 8 because: PUT ToDoItems/33,
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:17:23.5477,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0068411,
+2012-03-15 18:17:23.5477,Raven.Database.Server.HttpServer,Debug,Request #  15: POST    -     8 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 18:17:23.5477,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/33
+",
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000003,
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0100-0000-000000000003",
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/ToDoItems. (ToDoItems/33),
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/33 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/33
+",
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Temp/ToDoItems,
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 9 because: WORK BY IndexingExecuter,
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:17:23.5477,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:17:25.2850,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'int32s/0' was not found,
+2012-03-15 18:17:25.2850,Raven.Database.Server.HttpServer,Debug,Request #  16: GET     -     0 ms - <default>  - 404 - /docs/int32s/0,
+time,logger,level,message,exception
+2012-03-15 18:19:03.1759,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 96
+  CacheMemoryLimit    = 134217728
+  PollingInterval     = 00:02:00",
+2012-03-15 18:19:03.1915,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 65536
+  DatabasePageSize = 4096",
+2012-03-15 18:19:04.9219,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Backup/Status' was not found,
+2012-03-15 18:19:04.9695,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:19:04.9695,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:19:18.4256,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:19:18.4256,Raven.Database.Server.HttpServer,Debug,Request #   1: GET     -    19 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:19:18.7061,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fToDoItems:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-03-15 18:19:18.8153,Raven.Database.Indexing.IndexStorage,Info,Creating index Temp/ToDoItems with encoded name Temp/ToDoItems,
+2012-03-15 18:19:18.8620,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/ToDoItems,
+2012-03-15 18:19:18.8776,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 1 because: PUT INDEX Temp/ToDoItems,
+2012-03-15 18:19:18.8932,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:19:18.8932,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:19:18.9088,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:19:18.9868,Raven.Database.Server.HttpServer,Debug,Request #   2: GET     -   493 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:19:22.6632,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was not found,
+2012-03-15 18:19:22.7332,Raven.Database.Server.HttpServer,Debug,Request #   3: GET     -    70 ms - <default>  - 404 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:19:22.7332,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:19:22.7332,Raven.Database.Server.HttpServer,Debug,Request #   4: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:19:22.7848,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: False, ",
+2012-03-15 18:19:22.7848,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 2 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 18:19:22.7848,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:19:22.8053,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-03-15 18:19:22.8150,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 18:19:22.8150,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 18:19:22.8150,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000001, 3/15/2012 10:19:22 PM",
+2012-03-15 18:19:22.8150,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2012-03-15 18:19:22.8150,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:19:22.8150,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:19:22.8150,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0100-0000-000000000001,
+2012-03-15 18:19:22.8744,Raven.Database.Server.HttpServer,Debug,Request #   5: PUT     -   125 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:19:22.8920,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/1', update: False, ",
+2012-03-15 18:19:22.8920,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/1 with etag 00000000-0000-0100-0000-000000000002,
+2012-03-15 18:19:22.8920,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 4 because: PUT ToDoItems/1,
+2012-03-15 18:19:22.8920,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000001,
+2012-03-15 18:19:22.8920,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 18:19:22.8920,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0100-0000-000000000001",
+2012-03-15 18:19:22.8920,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/ToDoItems. (ToDoItems/1),
+2012-03-15 18:19:22.9377,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:19:22.9377,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0476947,
+2012-03-15 18:19:22.9377,Raven.Database.Server.HttpServer,Debug,Request #   6: POST    -    59 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 18:19:22.9377,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/1
+",
+2012-03-15 18:19:23.2561,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/1 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/1
+",
+2012-03-15 18:19:23.3633,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Temp/ToDoItems,
+2012-03-15 18:19:23.3633,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 5 because: WORK BY IndexingExecuter,
+2012-03-15 18:19:23.3633,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:19:23.3633,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:19:24.3215,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'int32s/1' was not found,
+2012-03-15 18:19:24.3215,Raven.Database.Server.HttpServer,Debug,Request #   7: GET     -     0 ms - <default>  - 404 - /docs/int32s/1,
+2012-03-15 18:19:32.6600,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:19:32.6600,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:19:32.6912,Raven.Database.Server.HttpServer,Debug,Request #   8: GET     -    35 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:19:32.7068,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:19:32.7224,Raven.Database.Server.HttpServer,Debug,Request #   9: GET     -    50 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:19:34.7447,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'int32s/1' was not found,
+2012-03-15 18:19:34.7447,Raven.Database.Server.HttpServer,Debug,Request #  10: GET     -     4 ms - <default>  - 404 - /docs/int32s/1,
+2012-03-15 18:22:00.2190,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:22:00.2190,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:22:00.3127,Raven.Database.Server.HttpServer,Debug,Request #  11: GET     -   104 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:22:00.4062,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:22:00.4062,Raven.Database.Server.HttpServer,Debug,Request #  12: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:22:01.7682,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:22:01.7682,Raven.Database.Server.HttpServer,Debug,Request #  13: GET     -     2 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:22:01.7965,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for: __document_id:todoitems/1,
+2012-03-15 18:22:01.8267,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/1' was found,
+2012-03-15 18:22:01.8481,Raven.Database.Server.HttpServer,Debug,Request #  14: GET     -    61 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=__document_id%253Atodoitems%252F1&start=0&pageSize=1&aggregation=None,
+2012-03-15 18:22:01.8686,Raven.Database.DocumentDatabase,Debug,Delete a document with key: ToDoItems/1 and etag ,
+2012-03-15 18:22:01.8686,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/1' was deleted,
+2012-03-15 18:22:01.8880,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 6 because: DEL ToDoItems/1,
+2012-03-15 18:22:01.8880,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:01.8880,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0204280,
+2012-03-15 18:22:01.8880,Raven.Database.Server.HttpServer,Debug,Request #  15: POST    -    25 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 18:22:01.8880,Raven.Database.Server.HttpServer,Debug,"	DELETE ToDoItems/1
+",
+2012-03-15 18:22:01.9172,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/ToDoItems, Keys: ToDoItems/1",
+2012-03-15 18:22:01.9172,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/1' was not found,
+2012-03-15 18:22:01.9406,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (ToDoItems/1) from Temp/ToDoItems,
+2012-03-15 18:22:01.9435,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 7 because: WORK BY IndexingExecuter,
+2012-03-15 18:22:01.9435,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:01.9435,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:22:07.4707,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 18:22:07.4795,Raven.Database.Server.HttpServer,Debug,Request #  16: GET     -    10 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:22:07.4795,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:22:07.4795,Raven.Database.Server.HttpServer,Debug,Request #  17: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:22:07.4922,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 8 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:07.4922,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0100-0000-000000000003,
+2012-03-15 18:22:07.4922,Raven.Database.Server.HttpServer,Debug,Request #  18: PUT     -     6 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000002,
+2012-03-15 18:22:07.4922,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000003, 3/15/2012 10:22:07 PM",
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 9 because: WORK BY IndexingExecuter,
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:07.4922,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:22:07.5847,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/33', update: False, ",
+2012-03-15 18:22:07.5847,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/33 with etag 00000000-0000-0100-0000-000000000004,
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 10 because: PUT ToDoItems/33,
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 10, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:07.5847,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0018342,
+2012-03-15 18:22:07.5847,Raven.Database.Server.HttpServer,Debug,Request #  19: POST    -     3 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 18:22:07.5847,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/33
+",
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000003,
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0100-0000-000000000003",
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/ToDoItems. (ToDoItems/33),
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/33 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/33
+",
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Temp/ToDoItems,
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 11 because: WORK BY IndexingExecuter,
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 11, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:07.5847,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 11, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:22:12.3857,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:22:12.3857,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:22:12.4481,Raven.Database.Server.HttpServer,Debug,Request #  20: GET     -    60 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:22:12.5416,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:22:12.5416,Raven.Database.Server.HttpServer,Debug,Request #  21: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:22:14.4534,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:22:14.4534,Raven.Database.Server.HttpServer,Debug,Request #  22: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 18:22:14.4709,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for: __document_id:todoitems/33,
+2012-03-15 18:22:14.4709,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/33' was found,
+2012-03-15 18:22:14.4738,Raven.Database.Server.HttpServer,Debug,Request #  23: GET     -     4 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=__document_id%253Atodoitems%252F33&start=0&pageSize=1&aggregation=None,
+2012-03-15 18:22:14.5079,Raven.Database.DocumentDatabase,Debug,Delete a document with key: ToDoItems/33 and etag ,
+2012-03-15 18:22:14.5079,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/33' was deleted,
+2012-03-15 18:22:14.5215,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 12 because: DEL ToDoItems/33,
+2012-03-15 18:22:14.5215,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 12, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:14.5215,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0062599,
+2012-03-15 18:22:14.5390,Raven.Database.Server.HttpServer,Debug,Request #  24: POST    -    23 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 18:22:14.5390,Raven.Database.Server.HttpServer,Debug,"	DELETE ToDoItems/33
+",
+2012-03-15 18:22:14.5390,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/ToDoItems, Keys: ToDoItems/33",
+2012-03-15 18:22:14.5390,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/33' was not found,
+2012-03-15 18:22:14.5390,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (ToDoItems/33) from Temp/ToDoItems,
+2012-03-15 18:22:14.5390,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 13 because: WORK BY IndexingExecuter,
+2012-03-15 18:22:14.5390,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 13, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:22:14.5390,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 13, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:24:19.5327,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:24:19.5327,Raven.Database.Server.HttpServer,Debug,Request #  25: GET     -     8 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:49:08.9655,Raven.Database.Indexing.IndexStorage,Info,Deleting index Temp/ToDoItems,
+2012-03-15 18:49:08.9655,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 14 because: DELETE INDEX Temp/ToDoItems,
+2012-03-15 18:49:08.9816,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 14, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:49:08.9816,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 14, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:53:43.2154,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fToDoItems:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-03-15 18:53:43.2154,Raven.Database.Indexing.IndexStorage,Info,Creating index Temp/ToDoItems with encoded name Temp/ToDoItems,
+2012-03-15 18:53:43.2154,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/ToDoItems,
+2012-03-15 18:53:43.2154,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 15 because: PUT INDEX Temp/ToDoItems,
+2012-03-15 18:53:43.2154,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 15, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:53:43.2310,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:53:43.2310,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-03-15 18:53:43.2310,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 18:53:43.2310,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 18:53:43.2310,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000003, 3/15/2012 10:22:07 PM",
+2012-03-15 18:53:43.2466,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 16 because: WORK BY IndexingExecuter,
+2012-03-15 18:53:43.2466,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 16, for: ReducingExecuter, will wait for additional work",
+2012-03-15 18:53:43.2466,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 16, for: IndexingExecuter, will wait for additional work",
+2012-03-15 18:53:43.3402,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 18:53:43.3402,Raven.Database.Server.HttpServer,Debug,Request #  26: GET     -   315 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 18:53:43.3402,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 18:53:43.3402,Raven.Database.Server.HttpServer,Debug,Request #  27: GET     -     2 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 19:19:12.9861,Raven.Database.Indexing.IndexStorage,Info,Deleting index Temp/ToDoItems,
+2012-03-15 19:19:13.0013,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 17 because: DELETE INDEX Temp/ToDoItems,
+2012-03-15 19:19:13.0013,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 17, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:19:13.0013,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 17, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:48:30.2432,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fToDoItems:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Temp_2fToDoItems : AbstractViewGenerator
+{
+	public Index_Temp_2fToDoItems()
+	{
+		this.ViewText = @""from doc in docs.ToDoItems
+select new {  }
+"";
+		this.ForEntityNames.Add(""ToDoItems"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""ToDoItems""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-03-15 19:48:30.2432,Raven.Database.Indexing.IndexStorage,Info,Creating index Temp/ToDoItems with encoded name Temp/ToDoItems,
+2012-03-15 19:48:30.2432,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/ToDoItems,
+2012-03-15 19:48:30.2432,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 18 because: PUT INDEX Temp/ToDoItems,
+2012-03-15 19:48:30.2432,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 18, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:48:30.2588,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 19:48:30.2744,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-03-15 19:48:30.2744,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 19:48:30.2744,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 19:48:30.2744,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000003, 3/15/2012 10:22:07 PM",
+2012-03-15 19:48:30.2744,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 19 because: WORK BY IndexingExecuter,
+2012-03-15 19:48:30.2744,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 19, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:48:30.2900,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 19, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:48:30.3680,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for all documents,
+2012-03-15 19:48:30.3680,Raven.Database.Server.HttpServer,Debug,Request #  28: GET     -   275 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=&start=0&pageSize=128&aggregation=None,
+2012-03-15 19:48:30.4147,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 19:48:30.4147,Raven.Database.Server.HttpServer,Debug,Request #  29: GET     -     1 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 19:49:20.9023,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:49:20.9023,Raven.Database.Server.HttpServer,Debug,Request #  30: GET     -     1 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 19:49:20.9228,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 19:49:20.9228,Raven.Database.Server.HttpServer,Debug,Request #  31: GET     -     3 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 19:49:20.9715,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 19:49:20.9715,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 20 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 19:49:20.9715,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0100-0000-000000000005,
+2012-03-15 19:49:20.9715,Raven.Database.Server.HttpServer,Debug,Request #  32: PUT     -     6 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 19:49:20.9715,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 20, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:20.9872,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000003,
+2012-03-15 19:49:20.9872,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 19:49:20.9872,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 19:49:20.9872,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000005, 3/15/2012 11:49:20 PM",
+2012-03-15 19:49:20.9872,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 21 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:20.9872,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 21, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:20.9872,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 21, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:49:21.2227,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/65', update: False, ",
+2012-03-15 19:49:21.2227,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/65 with etag 00000000-0000-0100-0000-000000000006,
+2012-03-15 19:49:21.2227,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 22 because: PUT ToDoItems/65,
+2012-03-15 19:49:21.2227,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0036376,
+2012-03-15 19:49:21.2325,Raven.Database.Server.HttpServer,Debug,Request #  33: POST    -    11 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 19:49:21.2325,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/65
+",
+2012-03-15 19:49:21.2490,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 22, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:21.2490,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000005,
+2012-03-15 19:49:21.2490,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 19:49:21.2490,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0100-0000-000000000005",
+2012-03-15 19:49:21.2490,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/ToDoItems. (ToDoItems/65),
+2012-03-15 19:49:21.2704,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/65 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/65
+",
+2012-03-15 19:49:21.2704,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Temp/ToDoItems,
+2012-03-15 19:49:21.2704,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 23 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:21.2704,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:21.2704,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:49:32.8568,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:49:32.8606,Raven.Database.Server.HttpServer,Debug,Request #  34: GET     -     4 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 19:49:32.8606,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 19:49:32.8606,Raven.Database.Server.HttpServer,Debug,Request #  35: GET     -     9 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 19:49:32.8821,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 19:49:32.8821,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 24 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 19:49:32.8821,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0100-0000-000000000007,
+2012-03-15 19:49:32.8821,Raven.Database.Server.HttpServer,Debug,Request #  36: PUT     -    15 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 19:49:32.8821,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 24, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:32.8908,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000006,
+2012-03-15 19:49:32.8908,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 19:49:32.8908,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 19:49:32.8908,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000007, 3/15/2012 11:49:32 PM",
+2012-03-15 19:49:32.8908,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 25 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:32.8908,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 25, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:32.8908,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 25, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:49:32.9541,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/97', update: False, ",
+2012-03-15 19:49:32.9541,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/97 with etag 00000000-0000-0100-0000-000000000008,
+2012-03-15 19:49:32.9541,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 26 because: PUT ToDoItems/97,
+2012-03-15 19:49:32.9541,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0089019,
+2012-03-15 19:49:32.9541,Raven.Database.Server.HttpServer,Debug,Request #  37: POST    -    10 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 19:49:32.9541,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/97
+",
+2012-03-15 19:49:32.9541,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 26, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:32.9541,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000007,
+2012-03-15 19:49:32.9541,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 19:49:32.9541,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0100-0000-000000000007",
+2012-03-15 19:49:32.9668,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/ToDoItems. (ToDoItems/97),
+2012-03-15 19:49:32.9668,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/97 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/97
+",
+2012-03-15 19:49:32.9668,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Temp/ToDoItems,
+2012-03-15 19:49:32.9668,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 27 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:32.9668,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 27, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:32.9668,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 27, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:49:46.9333,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 19:49:46.9333,Raven.Database.Server.HttpServer,Debug,Request #  38: GET     -     8 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 19:49:46.9995,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for: __document_id:todoitems/97,
+2012-03-15 19:49:46.9995,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/97' was found,
+2012-03-15 19:49:47.0141,Raven.Database.Server.HttpServer,Debug,Request #  39: GET     -    17 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=__document_id%253Atodoitems%252F97&start=0&pageSize=1&aggregation=None,
+2012-03-15 19:49:47.0141,Raven.Database.DocumentDatabase,Debug,Delete a document with key: ToDoItems/97 and etag ,
+2012-03-15 19:49:47.0141,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/97' was deleted,
+2012-03-15 19:49:47.0141,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 28 because: DEL ToDoItems/97,
+2012-03-15 19:49:47.0141,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0032855,
+2012-03-15 19:49:47.0141,Raven.Database.Server.HttpServer,Debug,Request #  40: POST    -     5 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 19:49:47.0141,Raven.Database.Server.HttpServer,Debug,"	DELETE ToDoItems/97
+",
+2012-03-15 19:49:47.2362,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 28, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:47.2362,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/ToDoItems, Keys: ToDoItems/97",
+2012-03-15 19:49:47.2362,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/97' was not found,
+2012-03-15 19:49:47.2362,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (ToDoItems/97) from Temp/ToDoItems,
+2012-03-15 19:49:47.2362,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 29 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:47.2362,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 29, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:47.2362,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 29, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:49:55.0043,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/ToDoItems for: __document_id:todoitems/65,
+2012-03-15 19:49:55.0043,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/65' was found,
+2012-03-15 19:49:55.0043,Raven.Database.Server.HttpServer,Debug,Request #  41: GET     -     3 ms - <default>  - 200 - /indexes/dynamic/ToDoItems?query=__document_id%253Atodoitems%252F65&start=0&pageSize=1&aggregation=None,
+2012-03-15 19:49:55.0043,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 19:49:55.0043,Raven.Database.Server.HttpServer,Debug,Request #  42: GET     -     4 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 19:49:55.0472,Raven.Database.DocumentDatabase,Debug,Delete a document with key: ToDoItems/65 and etag ,
+2012-03-15 19:49:55.0472,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/65' was deleted,
+2012-03-15 19:49:55.0472,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 30 because: DEL ToDoItems/65,
+2012-03-15 19:49:55.0472,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0012540,
+2012-03-15 19:49:55.0472,Raven.Database.Server.HttpServer,Debug,Request #  43: POST    -     6 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 19:49:55.0472,Raven.Database.Server.HttpServer,Debug,"	DELETE ToDoItems/65
+",
+2012-03-15 19:49:55.0861,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 30, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:55.0861,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/ToDoItems, Keys: ToDoItems/65",
+2012-03-15 19:49:55.0861,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/65' was not found,
+2012-03-15 19:49:55.0861,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (ToDoItems/65) from Temp/ToDoItems,
+2012-03-15 19:49:55.0997,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 31 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:55.0997,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 31, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:55.1124,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 31, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:49:58.9471,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:49:58.9471,Raven.Database.Server.HttpServer,Debug,Request #  44: GET     -     0 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 19:49:58.9471,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-03-15 19:49:58.9471,Raven.Database.Server.HttpServer,Debug,Request #  45: GET     -     0 ms - <default>  - 404 - /docs/Raven/Replication/Destinations,
+2012-03-15 19:49:58.9530,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/ToDoItems', update: True, ",
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 32 because: PUT Raven/Hilo/ToDoItems,
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 32, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:58.9705,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/ToDoItems with etag 00000000-0000-0100-0000-000000000009,
+2012-03-15 19:49:58.9705,Raven.Database.Server.HttpServer,Debug,Request #  46: PUT     -     5 ms - <default>  - 201 - /docs/Raven/Hilo/ToDoItems,
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000008,
+2012-03-15 19:49:58.9705,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/ToDoItems, no indexing will be performed, updating to 00000000-0000-0100-0000-000000000009, 3/15/2012 11:49:58 PM",
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 33 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 33, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:58.9705,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 33, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:49:58.9978,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'ToDoItems/129', update: False, ",
+2012-03-15 19:49:58.9978,Raven.Database.DocumentDatabase,Debug,Put document ToDoItems/129 with etag 00000000-0000-0100-0000-00000000000a,
+2012-03-15 19:49:58.9978,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 34 because: PUT ToDoItems/129,
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 34, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:58.9987,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0011810,
+2012-03-15 19:49:58.9987,Raven.Database.Server.HttpServer,Debug,Request #  47: POST    -     9 ms - <default>  - 200 - /bulk_docs,
+2012-03-15 19:49:58.9987,Raven.Database.Server.HttpServer,Debug,"	PUT ToDoItems/129
+",
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0100-0000-000000000009,
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/ToDoItems, LastIndexedEtag: 00000000-0000-0100-0000-000000000009",
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/ToDoItems. (ToDoItems/129),
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/129 result in index Temp/ToDoItems gave document: 	__document_id IS: todoitems/129
+",
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Temp/ToDoItems,
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 35 because: WORK BY IndexingExecuter,
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 35, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:49:58.9987,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 35, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:56:32.8023,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Raven%2fDocumentsByEntityName:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Raven_2fDocumentsByEntityName : AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };
+"";
+		this.AddMapDefinition(docs => from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new { Tag, LastModified = (DateTime)doc[""@metadata""][""Last-Modified""], __document_id = doc.__document_id });
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using Raven.Database.Indexing;
+public class Index_Raven_2fDocumentsByEntityName : AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };
+"";
+		this.AddMapDefinition(docs => from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new { Tag, LastModified = (DateTime)doc[""@metadata""][""Last-Modified""], __document_id = doc.__document_id });
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-03-15 19:56:32.8023,Raven.Database.Indexing.IndexStorage,Info,Creating index Raven/DocumentsByEntityName with encoded name Raven/DocumentsByEntityName,
+2012-03-15 19:56:32.8335,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Raven/DocumentsByEntityName,
+2012-03-15 19:56:32.8335,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 36 because: PUT INDEX Raven/DocumentsByEntityName,
+2012-03-15 19:56:32.8335,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 36, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:56:32.8832,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 2 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-03-15 19:56:32.8842,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/ToDoItems,
+2012-03-15 19:56:32.8842,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-03-15 19:56:32.8842,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 00000000-0000-0000-0000-000000000000",
+2012-03-15 19:56:32.8842,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Raven/DocumentsByEntityName. (ToDoItems/129),
+2012-03-15 19:56:32.9134,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on ToDoItems/129 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: todoitems/129
+	Tag I-: ToDoItems
+	LastModified I-: 20120315234958997
+",
+2012-03-15 19:56:32.9329,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 1 documents for Raven/DocumentsByEntityName,
+2012-03-15 19:56:32.9329,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 37 because: WORK BY IndexingExecuter,
+2012-03-15 19:56:32.9329,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 37, for: ReducingExecuter, will wait for additional work",
+2012-03-15 19:56:32.9475,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 37, for: IndexingExecuter, will wait for additional work",
+2012-03-15 19:56:34.0422,Raven.Database.Server.HttpServer,Debug,Request #  48: GET     -    13 ms - <default>  - 200 - /docs?pageSize=0&noCache=1241154792,
+2012-03-15 19:56:34.0892,Raven.Database.Server.HttpServer,Debug,Request #  49: GET     -     0 ms - <default>  - 200 - /docs?pageSize=0&noCache=-2056494691,
+2012-03-15 19:56:34.1521,Raven.Database.Server.HttpServer,Debug,Request #  50: GET     -     1 ms - <default>  - 200 - /license/status?noCache=633327071,
+2012-03-15 19:56:34.1829,Raven.Database.Server.HttpServer,Debug,Request #  51: GET     -    10 ms - <default>  - 200 - /build/version?noCache=230873245,
+2012-03-15 19:56:34.2762,Raven.Database.Server.HttpServer,Debug,Request #  52: GET     -    41 ms - <default>  - 200 - /stats?noCache=888294506,
+2012-03-15 19:56:38.3452,Raven.Database.Server.HttpServer,Debug,Request #  53: GET     -     2 ms - <default>  - 200 - /docs?pageSize=0&noCache=423808730,
+2012-03-15 19:56:38.3927,Raven.Database.Server.HttpServer,Debug,Request #  54: GET     -     2 ms - <default>  - 200 - /docs?pageSize=0&noCache=-490415542,
+2012-03-15 19:56:38.4243,Raven.Database.Server.HttpServer,Debug,Request #  55: GET     -     2 ms - <default>  - 200 - /license/status?noCache=-2049156981,
+2012-03-15 19:56:38.4555,Raven.Database.Server.HttpServer,Debug,Request #  56: GET     -     2 ms - <default>  - 200 - /build/version?noCache=-1373331754,
+2012-03-15 19:56:47.1199,Raven.Database.Server.HttpServer,Debug,Request #  57: GET     -    55 ms - <default>  - 200 - /docs/?start=0&pageSize=15&startsWith=/&noCache=1691672641,
+2012-03-15 19:56:47.3407,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/129' was found,
+2012-03-15 19:56:47.3407,Raven.Database.Server.HttpServer,Debug,Request #  58: GET     -     3 ms - <default>  - 200 - /docs/ToDoItems/129?noCache=1541843486,
+2012-03-15 19:56:47.4001,Raven.Database.Server.HttpServer,Debug,Request #  59: GET     -     2 ms - <default>  - 200 - /docs/?start=0&pageSize=15&startsWith=ToDoItems/129/&noCache=1219358483,
+2012-03-15 19:56:48.3654,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/129' was found,
+2012-03-15 19:56:53.4949,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/129' was found,
+2012-03-15 19:56:58.5849,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/129' was found,
+2012-03-15 19:57:03.6819,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/129' was found,
+2012-03-15 19:57:08.8240,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'ToDoItems/129' was found,
+2012-03-15 19:57:08.8240,Raven.Database.Server.HttpServer,Debug,Request #  60: GET     -     2 ms - <default>  - 200 - /docs/?start=0&pageSize=15&startsWith=/&noCache=-2036449944,
+2012-03-15 19:57:08.8571,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:08.8571,Raven.Database.Server.HttpServer,Debug,Request #  61: GET     -     5 ms - <default>  - 200 - /docs/Raven/Hilo/ToDoItems?noCache=-656187317,
+2012-03-15 19:57:08.9263,Raven.Database.Server.HttpServer,Debug,Request #  62: GET     -     1 ms - <default>  - 200 - /docs/?start=0&pageSize=15&startsWith=Raven/Hilo/ToDoItems/&noCache=-419492826,
+2012-03-15 19:57:09.8023,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:15.9297,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:21.0586,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:26.1404,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:31.2844,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:37.4834,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:43.5637,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:48.6766,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:53.8059,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:57:59.9343,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:58:06.0289,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:58:12.1236,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:58:17.2224,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:58:22.3350,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:58:27.4331,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:58:32.5310,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/ToDoItems' was found,
+2012-03-15 19:58:42.2101,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Raven/DocumentsByEntityName for: Tag:ToDoItems,
+2012-03-15 19:58:42.2130,Raven.Database.Server.HttpServer,Debug,Request #  63: GET     -     5 ms - <default>  - 0 - /indexes/Raven/DocumentsByEntityName?query=Tag%253AToDoItems&start=0&pageSize=0&aggregation=None,
+2012-03-15 19:58:42.2130,Raven.Database.Server.HttpServer,Debug,Request #  64: POST    -    34 ms - <default>  - 200 - /multi_get/,
+2012-03-15 19:58:42.4409,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Raven/DocumentsByEntityName for: Tag:ToDoItems,
+2012-03-15 19:58:42.4409,Raven.Database.Server.HttpServer,Debug,Request #  65: GET     -     1 ms - <default>  - 0 - /indexes/Raven/DocumentsByEntityName?query=Tag%253AToDoItems&start=0&pageSize=0&aggregation=None,
+2012-03-15 19:58:42.4409,Raven.Database.Server.HttpServer,Debug,Request #  66: POST    -     3 ms - <default>  - 200 - /multi_get/,
+2012-03-15 19:58:43.7302,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Raven/DocumentsByEntityName for: Tag:ToDoItems,
+2012-03-15 19:58:43.7302,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'todoitems/129' was found,
+2012-03-15 20:19:21.0318,Raven.Database.Indexing.IndexStorage,Info,Deleting index Temp/ToDoItems,
+2012-03-15 20:19:21.0318,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 38 because: DELETE INDEX Temp/ToDoItems,
+2012-03-15 20:19:21.0318,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 38, for: ReducingExecuter, will wait for additional work",
+2012-03-15 20:19:21.0318,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 38, for: IndexingExecuter, will wait for additional work",
+2012-03-15 21:19:29.0326,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 38, for: ReducingExecuter, will wait for additional work",
+2012-03-15 21:19:29.0326,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 38, for: IndexingExecuter, will wait for additional work",
