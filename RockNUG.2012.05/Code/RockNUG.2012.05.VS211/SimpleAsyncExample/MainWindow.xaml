@@ -1,0 +1,8 @@
+﻿<Window x:Class="SimpleAsyncExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <StackPanel>
+        <TextBlock FontSize="36" TextAlignment="Center" x:Name="StopWatchTextBlock" />
+        <TextBlock FontSize="36" TextAlignment="Center" x:Name="SizeTextBlock" />
+    </StackPanel>
+</Window>
