@@ -16,5 +16,5 @@ I can't guarentee that I will see issues opened or pull requests on this reposit
 
 Not every presentation I've ever given is here. This may either be because the presentation is owned by someone else,
 the presentation is old and I haven't taken the time to commit it, or because I forgot. If there is a particular 
-presentation that you are interested in and can't find it here, please see the [Feedback](#feedback) session to contact
+presentation that you are interested in and can't find it here, please see the [Feedback](#feedback) section to contact
 me and if I can provide the presentation.
