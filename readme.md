@@ -11,3 +11,10 @@ Based on a work at [github.com](http://github.com/vcsjones/Presentations).
 If you have any questions, suggestions, or feedback on any of my material, please contact me through [my blog](http://vcsjones.com/contact/).
 
 I can't guarentee that I will see issues opened or pull requests on this repository.
+
+##Completeness
+
+Not every presentation I've ever given is here. This may either be because the presentation is owned by someone else,
+the presentation is old and I haven't taken the time to commit it, or because I forgot. If there is a particular 
+presentation that you are interested in and can't find it here, please see the [Feedback](#Feedback) session to contact
+me and if I can provide the presentation.
