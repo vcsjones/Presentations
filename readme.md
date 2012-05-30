@@ -4,8 +4,6 @@
 
 Presentation Material by [Kevin Jones](http://vcsjones.com) is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
-Based on a work at [github.com](http://github.com/vcsjones/Presentations).
-
 ##Feedback
 
 If you have any questions, suggestions, or feedback on any of my material, please contact me through [my blog](http://vcsjones.com/contact/).
