@@ -1,0 +1,18 @@
+﻿@model AsyncMVC4.Models.Home.NewsModel
+
+@{
+    ViewBag.Title = "RSS Reader";
+}
+
+<h2>Async News - @Model.FeedName</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Published</th>
+		</tr>
+	</thead>
+	<tbody>
+	@Html.DisplayFor(m => m.Items)
+	</tbody>
+</table>
