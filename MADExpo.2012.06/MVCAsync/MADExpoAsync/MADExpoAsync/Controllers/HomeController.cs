@@ -25,6 +25,7 @@ namespace MADExpoAsync.Controllers
 		}
 
 		[HttpGet]
+		[OutputCache(Duration = 60)]
 		public async Task<ActionResult> Image(int id)
 		{
 			return File("~/Content/images/anon.jpg", "image/jpeg", "anon.jpg");

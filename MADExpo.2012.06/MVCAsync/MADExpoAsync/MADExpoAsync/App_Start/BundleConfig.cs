@@ -17,6 +17,9 @@ namespace MADExpoAsync
 						"~/Scripts/jquery.unobtrusive*",
 						"~/Scripts/jquery.validate*"));
 
+			bundles.Add(new ScriptBundle("~/bundles/bindingHandlers").Include(
+						"~/Scripts/Knockout.BindingHandlers.js"));
+
 			bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
 						"~/Scripts/knockout-2*"));
 

@@ -77,25 +77,59 @@ h1, h2, h3, h4, h5, h6, .speaker .name
     text-align: center;
 }
 
-.speaker
+.odd
 {
-    margin-top: 30px;
+    background-color: #DBDBDB;
 }
 
-    .speaker .name
+.header
+{
+    padding: 0px 7px 7px 0px;
+    background-color: rgb(41, 66, 101);
+    color: #FFF;
+    text-align: right;
+}
+
+.header a:link, .header a:visited
+{
+    color: #FFF;
+}
+
+.speaker
+{
+    padding: 30px 7px 7px 0px;
+    height: 130px;
+}
+
+    .speaker .name, .speaker .name:link
     {
         font-weight: bold;
         font-size: 16pt;
         cursor: pointer;
+        color:#000;
+        text-decoration: none;
     }
+
+        .speaker .name .hiText
+        {
+            color: rgb(161, 6, 2);
+        }
 
     .speaker img
     {
         float: left;
         margin-right: 10px;
+        margin-left: 7px;
     }
 
     .speaker .social
     {
         margin-top: 10px;
     }
+
+#speakers
+{
+    width: 840px;
+    margin: 0 auto;
+    border: 7px solid rgb(41, 66, 101);
+}

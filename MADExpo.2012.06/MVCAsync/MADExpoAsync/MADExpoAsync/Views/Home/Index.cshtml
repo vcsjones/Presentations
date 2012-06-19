@@ -2,15 +2,18 @@
     ViewBag.Title = "Speakers";
 }
 <script type="text/html" id="speaker-template">
-    <div class="speaker">
+    <div class="header" data-bind="visible: $index() === 0">
+        Sort by <a href="#" data-bind="click: function() { $root.sortFirstName(); }">First Name</a> or
+        <a href="#" data-bind="click: function() {$root.sortLastName();}">Last Name</a>
+    </div>
+    <div class="speaker" data-bind="oddItemClass: {class: 'odd', index: $index()}">
         <img data-bind="attr: {src: '@Url.Action("Image")/' + SpeakerId}" />
-        <h2 class="name" data-bind="click: $parent.speakerClick">
-            <span data-bind="text: FirstName"></span>
-            <span data-bind="text: LastName"></span>
-        </h2>
+        <a class="name" data-bind="attr: {href: '@Url.Action("Speaker")/' + SpeakerId}">
+            <span data-bind="MADText: FirstName" />
+            <span data-bind="MADText: LastName" />
+        </a>
         <p class="bio" data-bind="text: Bio"></p>
-        <div class="social" data-bind="if: Twitter">
-            <a data-bind="attr: {href: 'https://twitter.com/'+Twitter}" class="twitter-follow-button" data-show-count="false">Follow <span data-bind="text: '@@' + Twitter"></span></a>
+        <div class="social" data-bind="twitter: Twitter">
         </div>
     </div>
     <div style="clear: both"></div>
@@ -24,11 +27,24 @@
 </div>
 
 @section Scripts {
+@Scripts.Render("~/bundles/bindingHandlers")
 <script type="text/javascript">
     function SpeakerModel() {
         this.speakerClick = function () {
             window.location.href = '@Url.Action("Profile")/' + this.SpeakerId;
-        }
+        };
+
+        this.sortFirstName = function () {
+            this.speakers.sort(function (left, right) {
+                return left.FirstName < right.FirstName ? -1 : left.FirstName > right.FirstName ? 1 : 0;
+            });
+        };
+
+        this.sortLastName = function () {
+            this.speakers.sort(function (left, right) {
+                return left.LastName < right.LastName ? -1 : left.LastName > right.LastName ? 1 : 0;
+            });
+        };
     }
     $(document).ready(function () {
         $.ajax({
@@ -36,11 +52,11 @@
             dataType: 'json'
         }).done(function (d) {
             var model = new SpeakerModel();
-            model.speakers = d.Result;
+            var items = ko.observableArray(d.Result);
+            model.speakers = items;
             ko.applyBindings(model);
             window.setTimeout(function () {
                 $("#loading").remove();
-                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
             }, 0);
         });
     });
