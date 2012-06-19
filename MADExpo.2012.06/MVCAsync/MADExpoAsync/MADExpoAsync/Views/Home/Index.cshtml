@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Speakers";
+}
+<script type="text/html" id="speaker-template">
+    <div class="speaker">
+        <img data-bind="attr: {src: '@Url.Action("Image")/' + SpeakerId}" />
+        <h2 class="name" data-bind="click: $parent.speakerClick">
+            <span data-bind="text: FirstName"></span>
+            <span data-bind="text: LastName"></span>
+        </h2>
+        <p class="bio" data-bind="text: Bio"></p>
+        <div class="social" data-bind="if: Twitter">
+            <a data-bind="attr: {href: 'https://twitter.com/'+Twitter}" class="twitter-follow-button" data-show-count="false">Follow <span data-bind="text: '@@' + Twitter"></span></a>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+</script>
+
+<div id="speakers" data-bind="template: { name: 'speaker-template', foreach: speakers }">
+    <div id="loading">
+        <img src="~/Content/images/spinner.gif" />
+        <p>Hang tight...</p>
+    </div>
+</div>
+
+@section Scripts {
+<script type="text/javascript">
+    function SpeakerModel() {
+        this.speakerClick = function () {
+            window.location.href = '@Url.Action("Profile")/' + this.SpeakerId;
+        }
+    }
+    $(document).ready(function () {
+        $.ajax({
+            url: '@Url.Action("GetSpeakers")',
+            dataType: 'json'
+        }).done(function (d) {
+            var model = new SpeakerModel();
+            model.speakers = d.Result;
+            ko.applyBindings(model);
+            window.setTimeout(function () {
+                $("#loading").remove();
+                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+            }, 0);
+        });
+    });
+</script>
+}

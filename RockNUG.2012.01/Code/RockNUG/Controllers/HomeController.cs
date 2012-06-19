@@ -24,14 +24,14 @@ namespace RockNUG.Controllers
                               where release.Sessions.Count() > 0 && release.Date >= date
                               orderby release.Date ascending
                               select release).FirstOrDefault();
+			if (currentRelease == null)
+			{
+				return View();
+			}
             var nextRelease =  (from release in _entities.Releases.Include("Sessions").Include("Sessions.Speaker")
                               where release.Sessions.Any(s => s.Type == 2) && release.Date > currentRelease.Date
                               orderby release.Date ascending
                               select release).FirstOrDefault();
-            if (currentRelease == null)
-            {
-                return View();
-            }
             return View(
                 new MRelease
                             {

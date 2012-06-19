@@ -1,6 +1,3 @@
-USE [RockNUG]
-GO
-
 IF EXISTS(SELECT * FROM sys.tables where name = 'Session')
 BEGIN
 	DROP TABLE [dbo].[Session]
