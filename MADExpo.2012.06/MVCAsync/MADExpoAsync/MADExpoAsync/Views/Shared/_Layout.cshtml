@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>MADExpo - @ViewBag.Title</title>
     @Styles.Render("~/Content/themes/base/css", "~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -15,7 +15,7 @@
             <ul id="menu">
                 <li>Register</li>
                 <li>Sponsors</li>
-                <li>Speakers</li>
+                <li class="selected">Speakers</li>
                 <li>Sessions</li>
                 <li>MADKidz</li>
                 <li>Venue</li>
@@ -23,7 +23,7 @@
             </ul>
         </header>
         <div id="content">
-            <h1>@ViewBag.Title</h1>
+            <h1 id="pageTitle">@ViewBag.Title</h1>
             @RenderBody()
         </div>
         <footer>

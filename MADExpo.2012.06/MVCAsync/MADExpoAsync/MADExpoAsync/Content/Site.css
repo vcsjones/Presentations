@@ -16,6 +16,7 @@ body
     margin: 30px auto;
     border-radius: 20px;
     background-color: #FFF;
+    min-height: 600px;
 }
 
 header
@@ -45,7 +46,7 @@ header
             padding: 60px 10px 20px 10px;
         }
 
-            header #menu li:hover
+            header #menu li:hover, header #menu li.selected
             {
                 background-color: rgb(161, 6, 2);
                 color: #FFF;
@@ -90,10 +91,10 @@ h1, h2, h3, h4, h5, h6, .speaker .name
     text-align: right;
 }
 
-.header a:link, .header a:visited
-{
-    color: #FFF;
-}
+    .header a:link, .header a:visited
+    {
+        color: #FFF;
+    }
 
 .speaker
 {
@@ -106,30 +107,76 @@ h1, h2, h3, h4, h5, h6, .speaker .name
         font-weight: bold;
         font-size: 16pt;
         cursor: pointer;
-        color:#000;
+        color: #000;
         text-decoration: none;
     }
 
-        .speaker .name .hiText
-        {
-            color: rgb(161, 6, 2);
-        }
+.hiText
+{
+    color: rgb(161, 6, 2);
+}
 
-    .speaker img
-    {
-        float: left;
-        margin-right: 10px;
-        margin-left: 7px;
-    }
+.speaker img
+{
+    float: left;
+    margin-right: 10px;
+    margin-left: 7px;
+}
 
-    .speaker .social
-    {
-        margin-top: 10px;
-    }
+.speaker .social
+{
+    margin-top: 10px;
+}
 
-#speakers
+.wrapper
 {
     width: 840px;
     margin: 0 auto;
     border: 7px solid rgb(41, 66, 101);
+}
+
+.inlineWrapper
+{
+    border: 7px solid rgb(41, 66, 101);
+    width: 700px;
+    margin-left: 255px;
+    height: 111px;
+    border-bottom-right-radius: 10px;
+}
+
+.session
+{
+    padding: 5px;
+}
+
+    .session:hover
+    {
+        background-color: #eee;
+        cursor: pointer;
+    }
+
+.inlineHeader
+{
+    background-color: rgb(41, 66, 101);
+    width: 714px;
+    margin-left: 255px;
+    color: #FFF;
+    padding-top: 5px;
+    margin-top: 10px;
+    border-top-right-radius: 10px;
+}
+
+.largeSpeaker
+{
+    float: left;
+    border-right: 7px solid rgb(41, 66, 101);
+    margin-right: 5px;
+    padding-right: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.bio
+{
+    min-height: 75px;
 }

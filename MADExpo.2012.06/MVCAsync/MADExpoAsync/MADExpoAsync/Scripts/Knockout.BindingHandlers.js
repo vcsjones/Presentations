@@ -6,7 +6,7 @@
         var letterContainer = $('<span class="hiText">');
         letterContainer.text(name.charAt(0));
         container.append(letterContainer);
-        container.append(name.substring(1));
+        container.append(document.createTextNode(name.substring(1)));
     }
 };
 

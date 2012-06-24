@@ -2,10 +2,6 @@
     ViewBag.Title = "Speakers";
 }
 <script type="text/html" id="speaker-template">
-    <div class="header" data-bind="visible: $index() === 0">
-        Sort by <a href="#" data-bind="click: function() { $root.sortFirstName(); }">First Name</a> or
-        <a href="#" data-bind="click: function() {$root.sortLastName();}">Last Name</a>
-    </div>
     <div class="speaker" data-bind="oddItemClass: {class: 'odd', index: $index()}">
         <img data-bind="attr: {src: '@Url.Action("Image")/' + SpeakerId}" />
         <a class="name" data-bind="attr: {href: '@Url.Action("Speaker")/' + SpeakerId}">
@@ -19,31 +15,37 @@
     <div style="clear: both"></div>
 </script>
 
-<div id="speakers" data-bind="template: { name: 'speaker-template', foreach: speakers }">
-    <div id="loading">
-        <img src="~/Content/images/spinner.gif" />
-        <p>Hang tight...</p>
+<div class="wrapper" id="contentWrapper">
+    <div class="header">
+        Sort by <a href="#" data-bind="click: function() { $root.sortFirstName(); }">First Name</a> or
+        <a href="#" data-bind="click: function() {$root.sortLastName();}">Last Name</a>
+    </div>
+    <div id="speakers" data-bind="template: { name: 'speaker-template', foreach: speakers }">
+        <div id="loading">
+            <img src="~/Content/images/spinner.gif" />
+            <p>Hang tight...</p>
+        </div>
     </div>
 </div>
+
 
 @section Scripts {
 @Scripts.Render("~/bundles/bindingHandlers")
 <script type="text/javascript">
-    function SpeakerModel() {
-        this.speakerClick = function () {
-            window.location.href = '@Url.Action("Profile")/' + this.SpeakerId;
+    function SpeakersModel() {
+
+        this.sort = function (sortBy) {
+            return function (left, right) {
+                return left[sortBy] < right[sortBy] ? -1 : left[sortBy] > right[sortBy] ? 1 : 0;
+            };
         };
 
         this.sortFirstName = function () {
-            this.speakers.sort(function (left, right) {
-                return left.FirstName < right.FirstName ? -1 : left.FirstName > right.FirstName ? 1 : 0;
-            });
+            this.speakers.sort(this.sort('FirstName'));
         };
 
         this.sortLastName = function () {
-            this.speakers.sort(function (left, right) {
-                return left.LastName < right.LastName ? -1 : left.LastName > right.LastName ? 1 : 0;
-            });
+            this.speakers.sort(this.sort('LastName'));
         };
     }
     $(document).ready(function () {
@@ -51,7 +53,7 @@
             url: '@Url.Action("GetSpeakers")',
             dataType: 'json'
         }).done(function (d) {
-            var model = new SpeakerModel();
+            var model = new SpeakersModel();
             var items = ko.observableArray(d.Result);
             model.speakers = items;
             ko.applyBindings(model);
