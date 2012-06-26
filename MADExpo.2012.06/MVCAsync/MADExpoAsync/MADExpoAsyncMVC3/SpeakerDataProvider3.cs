@@ -13,12 +13,42 @@ namespace MADExpoAsync
 {
 	public class SpeakerDataProvider
 	{
-		public Task<IList<Speaker>> GetSpeakers()
+		public Task<List<Speaker>> GetSpeakers()
 		{
-			var list = new List<Speaker>();
+			Debug.WriteLine("START: GetSpeaker");
+			var connection = new SqlConnection("Data Source=(local); Initial Catalog=MADExpoKJ;Integrated Security=SSPI;");
+			var command = new SqlCommand("SELECT * FROM Speaker ORDER BY LastName, FirstName", connection);
+			connection.Open();
+			var task = Task.Factory.FromAsync<SqlDataReader>(command.BeginExecuteReader, command.EndExecuteReader, null)
+				.ContinueWith(c =>
+				{
+					var list = new List<Speaker>();
+					var reader = c.Result;
+					while (reader.Read())
+					{
+						var speaker = new Speaker
+						{
+							SpeakerId = reader.GetInt32(0),
+							FirstName = reader.GetString(1),
+							LastName = reader.GetString(2),
+							Twitter = reader.IsDBNull(3) ? null : reader.GetString(3),
+							Bio = reader.GetString(4)
+						};
+						list.Add(speaker);
+					}
+					return list;
+				})
+				.ContinueWith(d =>
+				{
+					command.Dispose();
+					connection.Dispose();
+					Debug.WriteLine("END: GetSpeaker");
+					return d.Result;
+				});
+			return task;
 			/*using (var connection = new SqlConnection("Data Source=(local); Initial Catalog=MADExpoKJ;Integrated Security=SSPI;"))
 			{
-				using (var command = new SqlCommand("SELECT * FROM Speaker ORDER BY LastName, FirstName", connection))
+				using (var command = new SqlCommand("", connection))
 				{
 					connection.Open();
 					using (var reader = await command.ExecuteReaderAsync())
@@ -38,69 +68,76 @@ namespace MADExpoAsync
 					}
 				}
 			}*/
-			return null;
 		}
 
 		public Task<Speaker> GetSpeaker(int speakerId)
 		{
 			Debug.WriteLine("START: GetSpeaker");
-			/*using (var connection = new SqlConnection("Data Source=(local); Initial Catalog=MADExpoKJ;Integrated Security=SSPI;"))
-			{
-				using (var command = new SqlCommand("SELECT * FROM Speaker WHERE SpeakerId = @SpeakerId", connection))
+			var connection = new SqlConnection("Data Source=(local); Initial Catalog=MADExpoKJ;Integrated Security=SSPI;");
+			var command = new SqlCommand("SELECT * FROM Speaker WHERE SpeakerId = @SpeakerId", connection);
+			command.Parameters.AddWithValue("SpeakerId", speakerId);
+			connection.Open();
+			var task = Task.Factory.FromAsync<SqlDataReader>(command.BeginExecuteReader, command.EndExecuteReader, null)
+				.ContinueWith(c =>
 				{
-					command.Parameters.AddWithValue("SpeakerId", speakerId);
-					connection.Open();
-					using (var reader = await command.ExecuteReaderAsync(CommandBehavior.SingleRow))
+					var reader = c.Result;
+					while (reader.Read())
 					{
-						while (await reader.ReadAsync())
+						return new Speaker
 						{
-							Debug.WriteLine("END: GetSpeaker");
-							return new Speaker
-							{
-								SpeakerId = reader.GetInt32(0),
-								FirstName = reader.GetString(1),
-								LastName = reader.GetString(2),
-								Twitter = reader.IsDBNull(3) ? null : reader.GetString(3),
-								Bio = reader.GetString(4)
-							};
-						}
-						return null;
+							SpeakerId = reader.GetInt32(0),
+							FirstName = reader.GetString(1),
+							LastName = reader.GetString(2),
+							Twitter = reader.IsDBNull(3) ? null : reader.GetString(3),
+							Bio = reader.GetString(4)
+						};
 					}
-				}
-			}
-			 * */
-			return null;
+					return null;
+				})
+				.ContinueWith(d =>
+				{
+					command.Dispose();
+					connection.Dispose();
+					Debug.WriteLine("END: GetSpeaker");
+					return d.Result;
+				});
+			return task;
 		}
 
 		public Task<List<Session>> GetSpeakerSessions(int speakerId)
 		{
 			Debug.WriteLine("START: GetSpeakerSessions");
-			var list = new List<Session>();
-			/*using (var connection = new SqlConnection("Data Source=(local); Initial Catalog=MADExpoKJ;Integrated Security=SSPI;"))
-			{
-				using (var command = new SqlCommand("SELECT * FROM Session WHERE SpeakerId = @SpeakerId ORDER BY Title", connection))
+			var connection = new SqlConnection("Data Source=(local); Initial Catalog=MADExpoKJ;Integrated Security=SSPI;");
+			var command = new SqlCommand("SELECT * FROM Session WHERE SpeakerId = @SpeakerId ORDER BY Title", connection);
+			command.Parameters.AddWithValue("SpeakerId", speakerId);
+			connection.Open();
+			var task = Task.Factory.FromAsync<SqlDataReader>(command.BeginExecuteReader, command.EndExecuteReader, null)
+				.ContinueWith(c =>
 				{
-					command.Parameters.AddWithValue("SpeakerId", speakerId);
-					connection.Open();
-					using (var reader = await command.ExecuteReaderAsync())
+					var reader = c.Result;
+					var list = new List<Session>();
+					while (reader.Read())
 					{
-						while (await reader.ReadAsync())
+						var session = new Session
 						{
-							var session = new Session
-							{
-								SessionId = reader.GetInt32(0),
-								SpeakerId = reader.GetInt32(1),
-								Title = reader.GetString(2),
-								Level = reader.GetInt16(3),
-								Abstract = reader.GetString(4)
-							};
-							list.Add(session);
-						}
+							SessionId = reader.GetInt32(0),
+							SpeakerId = reader.GetInt32(1),
+							Title = reader.GetString(2),
+							Level = reader.GetInt16(3),
+							Abstract = reader.GetString(4)
+						};
+						list.Add(session);
 					}
-				}
-			}*/
-			Debug.WriteLine("END: GetSpeakerSessions");
-			return null;
+					return list;
+				})
+				.ContinueWith(d =>
+				{
+					command.Dispose();
+					connection.Dispose();
+					Debug.WriteLine("END: GetSpeakerSessions");
+					return d.Result;
+				});
+			return task;
 		}
 
 		public Task<byte[]> GetSpeakerImage(int speakerId)
@@ -109,13 +146,16 @@ namespace MADExpoAsync
 			var command = new SqlCommand("SELECT Pic FROM Speaker WHERE SpeakerId = @SpeakerId", connection);
 			command.Parameters.AddWithValue("SpeakerId", speakerId);
 			connection.Open();
-			var source = new TaskCompletionSource<byte[]>();
 			var task = Task.Factory.FromAsync<SqlDataReader>(command.BeginExecuteReader, command.EndExecuteReader, null)
 				.ContinueWith(c =>
 			{
 				var reader = c.Result;
 				while (reader.Read())
 				{
+					if (reader.IsDBNull(0))
+					{
+						return null;
+					}
 					using (var ms = new MemoryStream())
 					{
 						const int BUFFER_SIZE = 1024;
@@ -132,11 +172,11 @@ namespace MADExpoAsync
 				return null;
 			}).ContinueWith(d =>
 			{
-				source.TrySetResult(d.Result);
 				command.Dispose();
 				connection.Dispose();
+				return d.Result;
 			});
-			return source.Task;
+			return task;
 		}
 	}
 

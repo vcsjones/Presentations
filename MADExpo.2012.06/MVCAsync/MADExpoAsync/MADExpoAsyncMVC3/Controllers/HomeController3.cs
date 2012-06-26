@@ -9,34 +9,53 @@ using System.Threading.Tasks;
 
 namespace MADExpoAsync.Controllers
 {
-    public class HomeController : AsyncController
-    {
-        public ActionResult Index()
-        {
+	public class HomeController : AsyncController
+	{
+		public ActionResult Index()
+		{
 			return View();
-        }
+		}
 
 		public ActionResult Speaker(int id)
 		{
 			return View(id);
 		}
 
-		public Task<ActionResult> GetSpeaker(int id)
+		public void GetSpeakersAsync()
 		{
-			return null; /*
 			var speakerDataProvider = new SpeakerDataProvider();
-			var speaker = speakerDataProvider.GetSpeaker(id);
-			var sessions = speakerDataProvider.GetSpeakerSessions(id);
-			return Json(new { Sessions = await sessions, Speaker = await speaker }, JsonRequestBehavior.AllowGet);*/
+			AsyncManager.OutstandingOperations.Increment();
+			speakerDataProvider.GetSpeakers().ContinueWith(d =>
+			{
+				AsyncManager.Parameters["speakers"] = d.Result;
+				AsyncManager.OutstandingOperations.Decrement();
+			});
 		}
 
-		[HttpGet]
-		public Task<ActionResult> GetSpeakers()
+		public ActionResult GetSpeakersCompleted(List<Speaker> speakers)
 		{
-			return null; /*
+			return Json(new { Result = speakers }, JsonRequestBehavior.AllowGet);
+		}
+
+		public void GetSpeakerAsync(int id)
+		{
 			var speakerDataProvider = new SpeakerDataProvider();
-			var speakers = await speakerDataProvider.GetSpeakers();
-			return Json(new { Result = speakers }, JsonRequestBehavior.AllowGet);*/
+			AsyncManager.OutstandingOperations.Increment(2);
+			speakerDataProvider.GetSpeaker(id).ContinueWith(d =>
+			{
+				AsyncManager.Parameters["speaker"] = d.Result;
+				AsyncManager.OutstandingOperations.Decrement();
+			});
+			speakerDataProvider.GetSpeakerSessions(id).ContinueWith(d =>
+			{
+				AsyncManager.Parameters["sessions"] = d.Result;
+				AsyncManager.OutstandingOperations.Decrement();
+			});
+		}
+
+		public ActionResult GetSpeakerCompleted(Speaker speaker, List<Session> sessions)
+		{
+			return Json(new { Sessions = sessions, Speaker = speaker }, JsonRequestBehavior.AllowGet);
 		}
 
 		public void ImageAsync(int id, int size = 128)
@@ -61,5 +80,5 @@ namespace MADExpoAsync.Controllers
 			var resizedImage = ImageResizer.ResizeImage(image, size);
 			return File(resizedImage, "image/png", id + ".png");
 		}
-    }
+	}
 }
