@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MADExpoAsyncMVC4", "MADExpoAsync\MADExpoAsyncMVC4.csproj", "{FAF1F816-32D1-4CC5-93DE-119305509E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MADExpoAsyncLoadTest", "MADExpoAsyncLoadTest\MADExpoAsyncLoadTest.csproj", "{6A761039-C4F5-408B-BE07-FA474AA5C27E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37E1CF62-D7B2-4468-84DF-8D395EDE693E}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
@@ -12,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MADExpoAsyncMVC3", "MADExpoAsyncMVC3\MADExpoAsyncMVC3.csproj", "{8CF3F314-DCED-43BB-BBF1-80C6BBABE070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MADExpoAsyncLoadTest", "MADExpoAsyncLoadTest\MADExpoAsyncLoadTest.csproj", "{6A761039-C4F5-408B-BE07-FA474AA5C27E}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
