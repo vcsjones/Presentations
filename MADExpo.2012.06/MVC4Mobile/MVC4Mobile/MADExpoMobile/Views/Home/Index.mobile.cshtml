@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Speakers";
+}
+<script type="text/html" id="speaker-template">
+    <li>
+        <a rel="external" data-bind="attr: {href: '@Url.Action("Speaker")/' + SpeakerId}">
+            <img style="width: 80px; height: 80px;" data-bind="attr: {src: '@Url.Action("Image")/' + SpeakerId + '?size=80'}" />
+            <span data-bind="MADText: FirstName"></span>
+            <span data-bind="MADText: LastName"></span> <br />
+            <span data-bind="text: Bio" class="bio dotdotdot"></span>
+        </a>
+    </li>
+</script>
+
+    <div data-role="content">
+        Sort by:
+        <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" data-role="button" data-bind="click: function() { $root.sortFirstName(); }">First Name</a>
+            <a href="#" data-role="button" data-bind="click: function() {$root.sortLastName();}">Last Name</a>
+        </div>
+    </div>
+    <ul data-role="listview" id="speakers" data-bind="template: { name: 'speaker-template', foreach: speakers }">
+        <li id="loading">Loading</li>
+    </ul>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/bindingHandlers")
+    <script type="text/javascript">
+        function SpeakersModel() {
+
+            this.sort = function (sortBy) {
+                return function (left, right) {
+                    return left[sortBy] < right[sortBy] ? -1 : left[sortBy] > right[sortBy] ? 1 : 0;
+                };
+            };
+
+            this.sortFirstName = function () {
+                this.speakers.sort(this.sort('FirstName'));
+                $('#speakers').listview('refresh');
+            };
+
+            this.sortLastName = function () {
+                this.speakers.sort(this.sort('LastName'));
+                $('#speakers').listview('refresh');
+            };
+        }
+        $(document).bind('pageinit', function () {
+            $.ajax({
+                url: '@Url.Action("GetSpeakers")',
+                dataType: 'json'
+            }).done(function (d) {
+                var model = new SpeakersModel();
+                var items = ko.observableArray(d.Result);
+                model.speakers = items;
+                model.title = "Speakers";
+                ko.applyBindings(model);
+                window.setTimeout(function () {
+                    $("#loading").remove();
+                    $('#speakers').listview('refresh');
+                    $(".ellipsis").dotdotdot();
+                }, 0);
+            });
+        });
+    </script>
+}

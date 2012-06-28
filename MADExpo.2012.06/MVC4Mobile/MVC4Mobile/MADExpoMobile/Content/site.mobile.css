@@ -1,0 +1,24 @@
+﻿body {
+    
+}
+
+#loading
+{
+    text-align: center;
+}
+
+.hiText
+{
+    color: rgb(161, 6, 2);
+}
+
+#speakers .bio
+{
+    font-size: 10pt;
+}
+
+.speakerImage
+{
+    float: left;
+    margin: 0 10px;
+}

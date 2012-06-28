@@ -1,0 +1,48 @@
+﻿@model System.Int32
+<script type="text/html" id="session-template">
+    <div class="session" data-bind="oddItemClass: {class: 'odd', index: $index()}">
+        <div data-bind="text: Title"></div>
+    </div>
+</script>
+<div id="speakerDetails">
+    <div id="loading">
+        <img src="~/Content/images/spinner.gif" />
+        <p>Hang tight...</p>
+    </div>
+    <h2 data-bind="with: speaker">
+        <span data-bind="MADText: FirstName"></span>
+        <span data-bind="MADText: LastName"></span>
+    </h2>
+    <img src='@Url.Action("Image", new { id = Model, size = 128 })' class="speakerImage" />
+    <div class="bio" data-bind="text: speaker().Bio"></div>
+    <h3 style="clear: both;" class="inlineHeader">Sessions</h3>
+    <div id="sessions" data-bind="template: { name: 'session-template', foreach: sessions }, visible: sessions().length > 0"></div>
+    <div data-bind="visible: sessions().length === 0">
+        <span class="hiText">:-(</span> No sessons.
+    </div>
+</div>
+<div style="clear: both"></div>
+@section Scripts
+{
+    @Scripts.Render("~/bundles/bindingHandlers")
+    <script type="text/ecmascript">
+        function SpeakerModel() {
+        }
+        $(document).bind('pageinit', function () {
+            $.ajax({
+                url: '@Url.Action("GetSpeaker")',
+                data: {'id': @Model},
+                dataType: 'json'
+            }).done(function (d) {
+                var model = new SpeakerModel();
+                model.speaker = ko.observable(d.Speaker);
+                model.title = d.Speaker.FirstName + ' ' + d.Speaker.LastName;
+                model.sessions = ko.observableArray(d.Sessions);
+                ko.applyBindings(model);
+                window.setTimeout(function () {
+                    $("#loading").remove();
+                }, 0);
+            });
+        });
+    </script>
+}
