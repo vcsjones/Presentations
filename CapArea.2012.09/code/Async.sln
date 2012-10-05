@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLoadTest", "AsyncLoadT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncPrimer", "AsyncPrimer\AsyncPrimer.csproj", "{F606B7D5-8895-4FC1-8480-56F0D068C5E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWPFProject", "MyWPFProject\MyWPFProject.csproj", "{E259A3D4-071A-4653-AADC-5DA62A3B26A2}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Async.vsmdi
@@ -40,6 +42,10 @@ Global
 		{F606B7D5-8895-4FC1-8480-56F0D068C5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F606B7D5-8895-4FC1-8480-56F0D068C5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F606B7D5-8895-4FC1-8480-56F0D068C5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E259A3D4-071A-4653-AADC-5DA62A3B26A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E259A3D4-071A-4653-AADC-5DA62A3B26A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E259A3D4-071A-4653-AADC-5DA62A3B26A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E259A3D4-071A-4653-AADC-5DA62A3B26A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

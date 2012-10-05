@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.SqlClient;
@@ -24,16 +25,17 @@ namespace AsyncMVC3.Controllers
 		public async Task<ActionResult> GetSpeaker(int id)
 		{
 			var speakerDataProvider = new SpeakerDataProvider();
-			var speaker = speakerDataProvider.GetSpeaker(id);
-			var sessions = speakerDataProvider.GetSpeakerSessions(id);
-			return Json(new { Sessions = await sessions, Speaker = await speaker }, JsonRequestBehavior.AllowGet);
+			var speaker = await speakerDataProvider.GetSpeaker(id);
+			var sessions = await speakerDataProvider.GetSpeakerSessions(id);
+			return Json(new { Sessions = sessions, Speaker = speaker }, JsonRequestBehavior.AllowGet);
 		}
 
 		[HttpGet]
-		public async Task<ActionResult> GetSpeakers()
+        [AsyncTimeout(2000)]
+		public async Task<ActionResult> GetSpeakers(CancellationToken cancellationToken)
 		{
 			var speakerDataProvider = new SpeakerDataProvider();
-			var speakers = await speakerDataProvider.GetSpeakers();
+			var speakers = await speakerDataProvider.GetSpeakers(cancellationToken);
 			return Json(new { Result = speakers }, JsonRequestBehavior.AllowGet);
 		}
 

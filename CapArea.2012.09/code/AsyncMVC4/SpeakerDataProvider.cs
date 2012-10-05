@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Data;
 using System.Data.SqlClient;
+using System.Threading;
 using System.Web;
 using System.Net;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace AsyncMVC3
 {
 	public class SpeakerDataProvider
 	{
-		public async Task<IList<Speaker>> GetSpeakers()
+		public async Task<IList<Speaker>> GetSpeakers(CancellationToken token)
 		{
 			var list = new List<Speaker>();
 			using (var connection = new SqlConnection("Data Source=(local); Initial Catalog=MADExpoKJ;Integrated Security=SSPI;"))
@@ -20,7 +21,7 @@ namespace AsyncMVC3
 				using (var command = new SqlCommand("SELECT * FROM Speaker ORDER BY LastName, FirstName", connection))
 				{
 					connection.Open();
-					using (var reader = await command.ExecuteReaderAsync())
+					using (var reader = await command.ExecuteReaderAsync(token))
 					{
 						while (await reader.ReadAsync())
 						{

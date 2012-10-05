@@ -1,33 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace AsyncPrimer
 {
-    class Program
+    partial class Program
     {
         static void Main()
         {
-            var result1 = Task.Run(() => Foo());
-            Console.WriteLine("1");
-            var result2 = Task.Run(() => Foo());
-            Console.WriteLine("2");
-            Task.WaitAll(result1, result2);
+            var results = Task.WhenAll(GetNumberAndProcess(), GetNumberAndProcess()).Result;
+            foreach (var result in results)
+            {
+                Console.WriteLine("Result: {0}", result);
+            }
         }
 
-        public static async Task Foo()
+        public static async Task<int> GetNumberAndProcess()
         {
-            int number = await GetNumber();
-            Console.WriteLine(number + 6);
+            Console.WriteLine("Getting number from database.");
+            var number = await GetNumberFromDatabase();
+            Console.WriteLine("Got number from database, now processing.");
+            return number + 6;
         }
 
-        public static async Task<int> GetNumber()
+
+
+        public static Task<int> GetNumberAndProcess2()
         {
-            Thread.Sleep(3000);
-            return 4;
+            Console.WriteLine("Getting number from database.");
+            return GetNumberFromDatabase().ContinueWith(r =>
+            {
+                Console.WriteLine("Got number from database, now processing.");
+                return r.Result + 6;
+            });
         }
     }
 }

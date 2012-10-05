@@ -41,16 +41,19 @@ namespace AsyncMVC3.Controllers
 		{
 			var speakerDataProvider = new SpeakerDataProvider();
 			AsyncManager.OutstandingOperations.Increment(2);
-			speakerDataProvider.GetSpeaker(id).ContinueWith(d =>
-			{
-				AsyncManager.Parameters["speaker"] = d.Result;
-				AsyncManager.OutstandingOperations.Decrement();
-			});
-			speakerDataProvider.GetSpeakerSessions(id).ContinueWith(d =>
-			{
-				AsyncManager.Parameters["sessions"] = d.Result;
-				AsyncManager.OutstandingOperations.Decrement();
-			});
+		    speakerDataProvider.GetSpeaker(id).ContinueWith(d =>
+		        {
+		            AsyncManager.Parameters["speaker"] = d.Result;
+		            AsyncManager.OutstandingOperations.Decrement();
+		        }).ContinueWith(r =>
+		                            {
+                                        speakerDataProvider.GetSpeakerSessions(id).ContinueWith(d =>
+                                        {
+                                            AsyncManager.Parameters["sessions"] = d.Result;
+                                            AsyncManager.OutstandingOperations.Decrement();
+                                        });
+		                            });
+
 		}
 
 		public ActionResult GetSpeakerCompleted(Speaker speaker, List<Session> sessions)
