@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LegacyExamples.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MADExpo</title>
+    <link rel="stylesheet" href="Style/Site.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mainform" runat="server">
+        <div id="wrapper">
+        <header>
+            <img src="images/MADExpoLogo.png" title="MADExpo" alt="MADExpo" />
+            <ul id="menu">
+                <li>Register</li>
+                <li>Sponsors</li>
+                <li class="selected">Speakers</li>
+                <li>Sessions</li>
+                <li>MADKidz</li>
+                <li>Venue</li>
+                <li>About</li>
+            </ul>
+        </header>
+        <div id="content">
+        <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+            </div>
+    </form>
+</body>
+</html>
