@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input type="number"  id="mysocketmessage" maxlength="800" />
+    <input type="button" id="sendmessage" value="Send" disabled="disabled"/>
+    <div id="response"></div>
+    <script language="javascript">
+        document.addEventListener('load', function() {
+            var socket = new WebSocket('ws://localhost:3395/greeter.ashx');
+            socket.addEventListener('message', function(message) {
+                document.getElementById('response').innerHTML = message.data;
+            });
+            socket.addEventListener('open', function() {
+                document.getElementById('sendmessage').removeAttribute('disabled');
+            });
+            socket.addEventListener('close', function() {
+                document.getElementById('sendmessage').setAttribute('disabled', 'disabled');
+            });
+            document.getElementById('sendmessage').addEventListener('click', function () {
+                document.getElementById('response').innerHTML = 'Saying hello...';
+                socket.send(document.getElementById('mysocketmessage').value);
+            });
+            document.addEventListener('unload', function() {
+                socket.close();
+            });
+        }, true);
+        </script>
+</body>
+</html>

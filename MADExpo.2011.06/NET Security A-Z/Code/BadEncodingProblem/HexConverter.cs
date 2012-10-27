@@ -15,7 +15,7 @@ namespace BadEncodingProblem
             {
                 return value;
             }
-            var bytes = Encoding.ASCII.GetBytes(str);
+            var bytes = Encoding.UTF8.GetBytes(str);
             bytes = SHA1.Create().ComputeHash(bytes);
             return bytes.Aggregate(new StringBuilder(), (s, b) => s.AppendFormat("{0:X} ", b)).ToString();
         }
