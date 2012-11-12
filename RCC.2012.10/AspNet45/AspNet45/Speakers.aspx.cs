@@ -8,7 +8,7 @@ namespace AspNet45
 {
     public partial class Speakers : Page
     {
-        public List<Speaker> GetSpeakers([Session]string sort)
+        public List<Speaker> GetSpeakers([QueryString]string sort)
         {
             if (sort == "desc")
             {
