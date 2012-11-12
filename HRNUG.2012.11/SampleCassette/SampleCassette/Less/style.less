@@ -1,0 +1,20 @@
+﻿@color: red;
+@size: 10px;
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
+#clickcontainer {
+    background-color: blue;
+    button {
+        .rounded-corners(@size/2);
+        background-color: @color;
+        &:hover {
+            background-color: green;
+        }
+    }
+}
