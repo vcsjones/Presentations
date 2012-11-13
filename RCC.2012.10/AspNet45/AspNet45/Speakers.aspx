@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Async="true" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Speakers.aspx.cs" Inherits="AspNet45.Speakers" %>
+﻿<%@ Page Title="" Async="true" Language="C#" MasterPageFile="~/Site.Master" ValidateRequest="false"  AutoEventWireup="true" CodeBehind="Speakers.aspx.cs" Inherits="AspNet45.Speakers" %>
 
 <asp:Content ID="BodyContents" ContentPlaceHolderID="BodyContentPlaceHolder" runat="server">
     <asp:Repeater runat="server" ItemType="AspNet45.Speaker" SelectMethod="GetSpeakers">

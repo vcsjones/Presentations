@@ -22,13 +22,13 @@ namespace AspNet45
                         var message = Encoding.UTF8.GetString(buffer.Array, 0, buffer.Count);
                         var response = "Hello from WebSockets, " + message + ". The time is: " + DateTime.Now.ToShortTimeString();
                         var responseBuffer = new ArraySegment<byte>(Encoding.UTF8.GetBytes(response));
-
-                        for (int i = 0; i < 5;i++ )
+                        for (var i = 0; i < 5; i++)
                         {
-                            var alert = new ArraySegment<byte>(Encoding.UTF8.GetBytes("Item " + i));
-                            await socket.SendAsync(alert, WebSocketMessageType.Text, true, CancellationToken.None);
+                            var q = new ArraySegment<byte>(Encoding.UTF8.GetBytes("Hello " + i));
+                            await socket.SendAsync(q, WebSocketMessageType.Text, true, CancellationToken.None);
                             Thread.Sleep(2000);
                         }
+
                         await socket.SendAsync(responseBuffer, WebSocketMessageType.Text, true, CancellationToken.None);
                     }
                     else
