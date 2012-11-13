@@ -8,7 +8,27 @@
 </head>
 <body>
 <div id="impress">
-    <div class="step slide" id="js" data-x="0" data-y="0">
+    <div class="step slide" id="intro" data-x="-4000">
+        <div class="title">
+            <div>Coffeescript &amp; Cassette</div>
+            <div>By Kevin Jones</div>
+        </div>
+        <div class="license">
+            <img src="ccby.png" title="License" alt="License" />
+        </div>
+    </div>
+    <div class="step slide" id="about" data-x="-2000">
+        <q>About Kevin Jones</q>
+        <ul>
+            <li>Team Lead @ Thycotic</li>
+            <li>Agile Enthusiast</li>
+            <li>ASP.NET MVP</li>
+            <li>
+                Twitter / GitHub: <span style="color: green; font-weight: bold;">vcsjones</span>
+            </li>
+        </ul>
+    </div>
+    <div class="step slide" id="js">
         <q>JavaScript is great</q>
         <ul>
             <li>Dynamic</li>
@@ -17,10 +37,10 @@
         </ul>
         <p>But...</p>
     </div>
-    <div class="step slide" id="problems" data-x="2000" data-y="0">
+    <div class="step slide" id="problems">
         <div class="title">It has problems</div>
     </div>
-    <div class="step slide" id="jsproblems" data-x="4000" data-y="0">
+    <div class="step slide" id="jsproblems">
         <q>
             Some of it is unintuitive
         </q>
@@ -35,10 +55,10 @@ alert(getObject().name);
         </pre>
         <button data-run="arrayloop">Run</button>
     </div>
-    <div class="step slide" id="jslocalloop" data-x="6000" data-y="0">
+    <div class="step slide" id="jslocalloop">
         <q>Or how about</q>
         <pre class="prettyprint" id="localloop" data-type="javascript">
-var myArray = [1,2,3];
+var myArray = ['a', 'b', 'c'];
 for (var i=0; i&lt;myArray.length; i++) {
     var item = myArray[i];
     alert(item);
@@ -48,7 +68,14 @@ alert(i);
         </pre>
         <button data-run="localloop">Run</button>
     </div>
-    <div class="step slide" id="inheritance" data-x="8000" data-y="0">
+    <div class="step slide" id="opinions">
+        <q>JavaScript is embroiled with opinions</q>
+        <div class="center">
+            <img src="opinions.png" />
+            <img src="rant.png" />
+        </div>
+    </div>
+    <div class="step slide" id="inheritance">
         <q>Odd syntax choices</q>
         <p>Inheritance is troublesome</p>
         <pre class="prettyprint" id="inheritancecode" data-type="javascript">
@@ -78,7 +105,7 @@ alert(myDog.toString());
         </pre>
         <button data-run="inheritancecode">Run</button>
     </div>
-    <div class="step slide" id="coffeescript" data-x="10000" data-y="0">
+    <div class="step slide" id="coffeescript">
         <q>Introducing CoffeeScript</q>
         <ul>
             <li>Compiles to JavaScript, so it works in all browsers.</li>
@@ -87,7 +114,7 @@ alert(myDog.toString());
             <li>No wheels have been reinvented.</li>
         </ul>
     </div>
-    <div class="step slide" id="listcomprehension" data-x="12000" data-y="0">
+    <div class="step slide" id="listcomprehension">
         <q>List comprehensions</q>
         <pre class="prettyprint" data-type="coffeescript" id="coffeeloop">
 items = [1, 2, 3, 4, 5];
@@ -95,7 +122,7 @@ alert(item) for item in items
         </pre>
         <button data-run="coffeeloop">Run</button>
     </div>
-    <div class="step slide" id="listranges" data-x="14000" data-y="0">
+    <div class="step slide" id="listranges">
         <q>Array Ranges</q>
         <pre class="prettyprint" data-type="coffeescript" id="listrange">
 items = [1..5];
@@ -103,7 +130,7 @@ alert(item) for item in items
         </pre>
         <button data-run="listrange">Run</button>
     </div>
-    <div class="step slide" id="lexicalscope" data-x="16000" data-y="0">
+    <div class="step slide" id="lexicalscope">
         <q>Discourages global scope</q>
         <p>Everything is wrapped in a self executing function to avoid global scope</p>
         <pre class="prettyprint" data-type="coffeescript">
@@ -113,7 +140,7 @@ i = 'foo'
         <p>And parenthesis are optional (sometimes)</p>
         <p class="small">Just use parenthesis</p>
     </div>
-    <div class="step slide" id="nobraces" data-x="18000" data-y="0">
+    <div class="step slide" id="nobraces">
         <q>Indentation is used for braces, no semicolons</q>
         <pre class="prettyprint" id="whosbill" data-type="coffeescript">
 getObject = ->
@@ -123,7 +150,7 @@ alert(getObject().name)
         </pre>
         <button data-run="whosbill">Run</button>
     </div>
-    <div class="step slide" id="skinnyarrow" data-x="20000" data-y="0">
+    <div class="step slide" id="skinnyarrow">
         <q>Skinny arrows declare functions</q>
         <pre class="prettyprint" id="jcallbackalert" data-type="coffeescript">
 $.getJSON('jsonresponse.json', (d) ->
@@ -132,7 +159,7 @@ $.getJSON('jsonresponse.json', (d) ->
         </pre>
         <button data-run="jcallbackalert">Run</button>
     </div>
-    <div class="step slide" id="newthis" data-x="22000" data-y="0">
+    <div class="step slide" id="newthis">
         <q>Use '@' instead of this.</q>
         <pre class="prettyprint" data-type="coffeescript">
 $('#runbutton').click(->
@@ -141,7 +168,7 @@ $('#runbutton').click(->
         </pre>
         <button id="runbutton">Run</button>
     </div>
-    <div class="step slide" id="fatarrow" data-x="24000" data-y="0">
+    <div class="step slide" id="fatarrow">
         <q>Fat arrows capture 'this' in the function</q>
         <pre class="prettyprint" id="jcallbacktext" data-type="coffeescript">
 $('#ajaxrunbutton').click(->
@@ -152,7 +179,7 @@ $('#ajaxrunbutton').click(->
         </pre>
         <button id="ajaxrunbutton">Run</button>
     </div>
-    <div class="step slide" id="stringinterpol" data-x="26000" data-y="0">
+    <div class="step slide" id="stringinterpol">
         <q>String Interpolation</q>
         <pre class="prettyprint" id="stringinterpolation" data-type="coffeescript">
 x = 1
@@ -161,7 +188,7 @@ alert("#{x + y}")
         </pre>
         <button data-run="stringinterpolation">Run</button>
     </div>
-    <div class="step slide" id="classes" data-x="28000" data-y="0">
+    <div class="step slide" id="classes">
         <q>Class Support</q>
 <pre class="prettyprint" data-type="coffeescript" id="animalcode">
 class Animal
@@ -174,36 +201,136 @@ alert(someAnimal.name)
 </pre>
         <button data-run="animalcode">Run</button>
     </div>
-    <div class="step slide" id="classinheritance" data-x="30000" data-y="0">
+    <div class="step slide" id="classinheritance">
         <q>Easy Inheritance</q>
         <p>Object oriented isn't difficult in CoffeeScript</p>
-    <pre class="prettyprint" data-type="coffeescript" id="inheritcode">
-    class Animal
-        constructor: (name) ->
-            @name = name
-        sayHello: () ->
-            "Hello, #{@name}"
-        toString: () ->
-            @name
+        <pre class="prettyprint" data-type="coffeescript" id="inheritcode">
+        class Animal
+            constructor: (name) ->
+                @name = name
+            sayHello: () ->
+                "Hello, #{@name}"
+            toString: () ->
+                @name
 
-    class Dog extends Animal
-        constructor: (breed, name) ->
-            super name
-            @breed = breed
+        class Dog extends Animal
+            constructor: (breed, name) ->
+                super name
+                @breed = breed
 
-    myDog = new Dog('Cavalier Spaniel', 'Blondy')
-    alert(myDog.sayHello())
-    </pre>
+        myDog = new Dog('Cavalier Spaniel', 'Blondy')
+        alert(myDog.sayHello())
+        </pre>
         <button data-run="inheritcode">Run</button>
     </div>
-</div>
-<script src="impress.js" type="text/javascript"></script>
+    <div class="step slide" id="coffeeopinions">
+        <q>CoffeeScript is Equally Opinionated</q>
+        <article>
+            CoffeeScript is a language not worth learning
+            <aside>Reginald Braithwaite</aside>
+        </article>
+        <article>
+            After everything, CoffeeScript is for people who hate JavaScript. JavaScript warts should be avoided by education
+            <aside>Oscar Godson</aside>
+        </article>
+        <article>CoffeeScript is the most amazing thing ever. It may eclipse the Polio vaccine.
+            <aside>Kevin Jones</aside>
+        </article>
+    </div>
+    <div class="step slide" id="coffeeproblems">
+        <q>CoffeeScript has some negatives</q>
+        <ul>
+            <li>Transpiled languages are difficult to debug.</li>
+            <li>Compiler provides zero compile time warnings.</li>
+            <li>Syntax is unfamiliar to most .NET developers</li>
+        </ul>
+    </div>
+    <div class="step slide" id="typescript">
+        <div class="title">What about TypeScript?</div>
+    </div>
+    <div class="step slide" id="typescripttypes">
+        <q>TypeScript has better &quot;type&quot; support</q>
+        <ul>
+            <li>Classes</li>
+            <li>Interfaces</li>
+            <li>Inheritence</li>
+            <li>Type annotation</li>
+            <li>The compiler produces compile time warnings of type safety violations</li>
+        </ul>
+        <div>Fits better in the .NET ecosystem.</div>
+    </div>
+    <div class="step slide" id="coffeesugar">
+        <q>CoffeeScript has syntactic sugar</q>
+        <ul>
+            <li>List comprehensions</li>
+            <li>String interpolation</li>
+            <li>Everything else we just saw</li>
+        </ul>
+    </div>
+    <div class="step slide" id="compatibility">
+        <q>Each have different compatibility traits</q>
+        <ul>
+            <li>All JavaScript is valid TypeScript</li>
+            <li>JavaScript is not valid CoffeeScript</li>
+            <li>Both can use existing JavaScript libraries</li>
+        </ul>
+    </div>
+    <div class="step slide" id="howtouse">
+        <q>How do I use this in my project?</q>
+        <ul>
+            <li>How to I compile it to JavaScript on-the-fly?</li>
+            <li>How can I minify it?</li>
+            <li>What about asset pipeline management?</li>
+        </ul>
+    </div>
+    <div class="step slide" id="cassette">
+        <q>Looking at Cassette</q>
+        <p>Asset bundling for .NET</p>
+        <ul>
+            <li>Get it from NuGet</li>
+            <li>CoffeeScript compilation</li>
+            <li>Minification</li>
+            <li>Bundling</li>
+            <li>Other features
+                <ul>
+                    <li>SASS</li>
+                    <li>LESS</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="step slide" id="cassetteconfig">
+        <q>A little configuration</q>
+        <pre class="prettyprint lang-cs">
+public void Configure(BundleCollection bundles, CassetteSettings settings)
+{
+    var compiler = new IECoffeeScriptCompiler();
+    bundles.AddPerIndividualFile&lt;ScriptBundle&gt;("Scripts",
+    new FileSearch { SearchOption = SearchOption.TopDirectoryOnly },
+    b => b.Processor = new ScriptPipeline { CoffeeScriptCompiler = compiler });
+    bundles.AddPerSubDirectory&lt;ScriptBundle&gt;("Scripts",
+        b => b.Processor = new ScriptPipeline
+        {
+        CoffeeScriptCompiler = compiler
+    }, true);
+} </pre>
+        <p>Fixes some issues noticed in the default configuration.</p>
+        </div>
+    </div>
+<script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+<script language="javascript">
+    var start = -2000;
+    $('div.slide').each(function() {
+        this.setAttribute('data-x', (start += 2000).toString());
+        this.setAttribute('data-y', '0');
+    });
+</script>
 <script src="prettify.js" type="text/javascript"></script>
 <script src="coffee-script.js" type="text/javascript"></script>
-<script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="coffee-demo.coffee" type="text/coffeescript"></script>
+<script src="impress.js" type="text/javascript"></script>
 <script type="text/javascript">
     impress().init();
 </script>
-<script src="coffee-demo.coffee" type="text/coffeescript"></script>
 </body>
 </html>

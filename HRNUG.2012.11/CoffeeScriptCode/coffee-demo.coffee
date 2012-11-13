@@ -1,5 +1,5 @@
 $('pre[data-type=coffeescript]').each(->
-    $t = $(this)
+    $t = $(@)
     $t.css('width', '49%').css('float', 'left')
     $jsblock = $('<pre class=\'prettyprint\' style=\'float:right; width: 49%\' />')
     $jsblock.text(CoffeeScript.compile($t.text()))
@@ -17,7 +17,6 @@ $('body').on('click', 'button[data-run]', ->
     else
         eval(src)
 )
-
 
 $('#runbutton').click(->
     alert $(@).attr('id')

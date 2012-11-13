@@ -211,7 +211,7 @@ a:focus {
 
     width: 900px;
     height: 700px;
-    padding: 0px 60px;
+    padding: 0 60px;
 
     background: white url(bottombar.png) no-repeat bottom right;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -236,6 +236,11 @@ a:focus {
     margin-top: 25px;
 }
 
+.slide div.center {
+    width: 540px;
+    margin: 0 auto;
+}
+
 .slide q strong {
     white-space: nowrap;
 }
@@ -257,6 +262,37 @@ a:focus {
     text-align: center;
     width: 100%;
     margin-left: -60px;
+}
+
+.slide article {
+    font-style: italic;
+    width: 540px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.slide article aside {
+    text-align: right;
+    font-style: normal;
+}
+
+.slide article aside:before {
+    content: '-'
+}
+
+.slide div.license {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.slide div.title div {
+    height: 48pt;
+}
+
+.slide div.title div+div {
+    font-size: 24pt;
+    color: #AAA;
 }
 
 .slide pre {
