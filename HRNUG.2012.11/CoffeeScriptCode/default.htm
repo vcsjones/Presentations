@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="impress">
-    <div class="step slide" id="intro" data-x="-4000">
+    <div class="step slide" id="intro">
         <div class="title">
             <div>Coffeescript &amp; Cassette</div>
             <div>By Kevin Jones</div>
@@ -17,12 +17,12 @@
             <img src="ccby.png" title="License" alt="License" />
         </div>
     </div>
-    <div class="step slide" id="about" data-x="-2000">
+    <div class="step slide" id="about">
         <q>About Kevin Jones</q>
         <ul>
             <li>Team Lead @ Thycotic</li>
             <li>Agile Enthusiast</li>
-            <li>ASP.NET MVP</li>
+            <li>6 Year ASP.NET MVP</li>
             <li>
                 Twitter / GitHub: <span style="color: green; font-weight: bold;">vcsjones</span>
             </li>
@@ -76,8 +76,8 @@ alert(i);
         </div>
     </div>
     <div class="step slide" id="inheritance">
-        <q>Odd syntax choices</q>
-        <p>Inheritance is troublesome</p>
+        <q>Object Oriented</q>
+        <p>But has no notion of classes.</p>
         <pre class="prettyprint" id="inheritancecode" data-type="javascript">
 function Animal(name) {
     this.name = name;
@@ -112,6 +112,14 @@ alert(myDog.toString());
             <li>Takes care of some pesky JavaScript syntax.</li>
             <li>Interops with existing JavaScript code just fine</li>
             <li>No wheels have been reinvented.</li>
+        </ul>
+    </div>
+    <div class="step slide" id="coffeeintro">
+        <q>What does CoffeeScript give us?</q>
+        <ul>
+            <li>New syntaxes, or syntactic sugar</li>
+            <li>White-space sensitive</li>
+            <li>Abaondons large portions of the C syntax</li>
         </ul>
     </div>
     <div class="step slide" id="listcomprehension">
@@ -243,6 +251,7 @@ alert(someAnimal.name)
             <li>Transpiled languages are difficult to debug.</li>
             <li>Compiler provides zero compile time warnings.</li>
             <li>Syntax is unfamiliar to most .NET developers</li>
+            <li>Inline CoffeeScript in HTML markup should be avoided.</li>
         </ul>
     </div>
     <div class="step slide" id="typescript">
@@ -261,6 +270,7 @@ alert(someAnimal.name)
     </div>
     <div class="step slide" id="coffeesugar">
         <q>CoffeeScript has syntactic sugar</q>
+        <q>Plus a lot of what TypeScript has</q>
         <ul>
             <li>List comprehensions</li>
             <li>String interpolation</li>
