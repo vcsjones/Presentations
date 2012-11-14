@@ -1,0 +1,39 @@
+﻿@{
+    Bundles.Reference("~/Content/Site.css");
+    Bundles.Reference("~/Scripts/jquery-1.7.2.js");
+    Bundles.Reference("~/Scripts/knockout-2.1.0.js");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MADExpo - @ViewBag.Title</title>
+    @Bundles.RenderStylesheets()
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="~/Content/images/MADExpoLogo.png" />
+            <ul id="menu">
+                <li>Register</li>
+                <li>Sponsors</li>
+                <li class="selected">Speakers</li>
+                <li>Sessions</li>
+                <li>MADKidz</li>
+                <li>Venue</li>
+                <li>About</li>
+            </ul>
+        </header>
+        <div id="content">
+            <h1 id="pageTitle">@ViewBag.Title</h1>
+            @RenderBody()
+        </div>
+        <footer>
+        </footer>
+    </div>
+    @Bundles.RenderScripts()
+    @RenderSection("Scripts", required:false)
+</body>
+</html>

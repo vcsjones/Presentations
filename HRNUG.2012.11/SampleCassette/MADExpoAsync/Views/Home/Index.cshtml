@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Speakers";
+    Bundles.Reference("~/Scripts/Home");
+    Bundles.Reference("~/Scripts/Knockout.BindingHandlers.js");
+}
+<script type="text/html" id="speaker-template">
+    <div class="speaker" data-bind="oddItemClass: {class: 'odd', index: $index()}">
+        <img data-bind="attr: {src: '@Url.Action("Image")/' + SpeakerId}" />
+        <a class="name" data-bind="attr: {href: '@Url.Action("Speaker")/' + SpeakerId}">
+            <span data-bind="MADText: FirstName" />
+            <span data-bind="MADText: LastName" />
+        </a>
+        <p class="bio" data-bind="text: Bio"></p>
+        <div class="social" data-bind="twitter: Twitter">
+        </div>
+    </div>
+    <div style="clear: both"></div>
+</script>
+
+<div class="wrapper" id="contentWrapper">
+    <div class="header">
+        Sort by <a href="#" data-bind="click: function() { $root.sortFirstName(); }">First Name</a> or
+        <a href="#" data-bind="click: function() {$root.sortLastName();}">Last Name</a>
+    </div>
+    <div id="speakers" data-bind="template: { name: 'speaker-template', foreach: speakers }">
+        <div id="loading">
+            <img src="~/Content/images/spinner.gif" />
+            <p>Hang tight...</p>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: '@Url.Action("GetSpeakers")',
+            dataType: 'json'
+        }).done(function (d) {
+            var items = ko.observableArray(d.Result);
+            var model = new MADExpo.SpeakersModel(items);
+            ko.applyBindings(model);
+            window.setTimeout(function () {
+                $("#loading").remove();
+            }, 0);
+        });
+    });
+</script>
+}
