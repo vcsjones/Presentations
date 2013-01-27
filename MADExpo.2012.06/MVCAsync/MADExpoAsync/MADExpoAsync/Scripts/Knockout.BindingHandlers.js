@@ -1,5 +1,5 @@
 ﻿ko.bindingHandlers.MADText = {
-    update: function (element, valueAccessor, allBindingsAccessor, viewModel) {
+    update: function (element, valueAccessor) {
         var container = $(element);
         var value = valueAccessor();
         var name = ko.utils.unwrapObservable(value);
@@ -11,7 +11,7 @@
 };
 
 ko.bindingHandlers.oddItemClass = {
-    update: function (element, valueAccessor, allBindingsAccessor, viewModel) {
+    update: function (element, valueAccessor) {
         var value = valueAccessor();
         var data = ko.utils.unwrapObservable(value);
         var cls = data['class'];
@@ -23,7 +23,7 @@ ko.bindingHandlers.oddItemClass = {
 };
 
 ko.bindingHandlers.twitter = {
-    init: function (element, valueAccessor, allBindingsAccessor, viewModel) {
+    init: function (element, valueAccessor) {
         var value = valueAccessor();
         var twitterTag = ko.utils.unwrapObservable(value);
         if (!twitterTag) {
