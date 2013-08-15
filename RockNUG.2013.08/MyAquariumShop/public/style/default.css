@@ -1,0 +1,49 @@
+body {
+  background-color: #F1F1F1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+.wrapper {
+  background-color: #FFF;
+  width: 940px;
+  margin: 0 auto;
+}
+header {
+  border-top: 2px solid #CCC;
+}
+header hgroup #site-title {
+  margin: 0.3in 0 0.2in 1in;
+}
+header img {
+  height: 198px;
+}
+#container {
+  margin: 15px;
+  clear: both;
+}
+nav {
+  background-color: #000;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li:hover {
+  background-color: #FFF;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #F1F1F1;
+}
+nav ul li a:hover {
+  color: #000;
+}

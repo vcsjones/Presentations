@@ -1,0 +1,11 @@
+{
+	"name": "MyAquariumShop",
+	"version": "0.0.1",
+	"private": "true",
+	"dependencies": {
+		"jade": "0.31.1",
+		"express": "3.2.5",
+		"less": "1.3.3",
+		"less-middleware": "0.1.11"
+	}
+}

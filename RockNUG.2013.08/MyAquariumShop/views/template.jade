@@ -1,0 +1,19 @@
+!!!5
+html(lang='en')
+	head
+		title #{title}
+		link(rel='stylesheet', href='/style/default.css')
+	body
+		.wrapper
+			header
+				hgroup
+					h1(id='site-title') My Aquarium Shop
+				img(alt='Legos', src='http://dsdujlkb89x0f.cloudfront.net/wp-content/uploads/2012/08/legos2.jpg')
+			nav(role='navigation')
+				ul
+					li
+						a(href='/') Home
+					li
+						a(href='/about') About
+			#container
+				block content
