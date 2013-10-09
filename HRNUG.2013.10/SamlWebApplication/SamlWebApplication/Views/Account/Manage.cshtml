@@ -1,0 +1,15 @@
+﻿@model SamlWebApplication.Models.LocalPasswordModel
+@{
+    ViewBag.Title = "Manage Account";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+
+<p>You're logged in as <strong>@ViewBag.NameIdentifier</strong>.</p>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

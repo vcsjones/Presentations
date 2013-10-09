@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamlWebApplication", "SamlWebApplication\SamlWebApplication.csproj", "{20A5A00D-BD05-4212-A5EC-1AA0EC0E843E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthWebApplication", "OAuthWebApplication\OAuthWebApplication.csproj", "{FEA554BB-8439-4528-ACC3-0C5D590DAE03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20A5A00D-BD05-4212-A5EC-1AA0EC0E843E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A5A00D-BD05-4212-A5EC-1AA0EC0E843E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A5A00D-BD05-4212-A5EC-1AA0EC0E843E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A5A00D-BD05-4212-A5EC-1AA0EC0E843E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA554BB-8439-4528-ACC3-0C5D590DAE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA554BB-8439-4528-ACC3-0C5D590DAE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA554BB-8439-4528-ACC3-0C5D590DAE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA554BB-8439-4528-ACC3-0C5D590DAE03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
