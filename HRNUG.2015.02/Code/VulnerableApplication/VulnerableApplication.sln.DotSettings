@@ -1,0 +1,38 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/Shortcut/@EntryValue">noncegen</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=56DE31D016DB9244A994B6B265016924/Text/@EntryValue"> var rng = new RNGCryptoServiceProvider();&#xD;
+var nonceBytes = new byte[32];&#xD;
+rng.GetBytes(nonceBytes);&#xD;
+var nonce = Convert.ToBase64String(nonceBytes);</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/Shortcut/@EntryValue">noncehelper</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=80576298FEAAE04A813FF88CC6B8A606/Text/@EntryValue">public static class NonceHelper&#xD;
+{&#xD;
+    public static IHtmlString ScriptNonce(this HtmlHelper helper)&#xD;
+    {&#xD;
+        return new HtmlString(helper.ViewContext.HttpContext.GetOwinContext().Get&lt;string&gt;("ScriptNonce"));&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/Shortcut/@EntryValue">noncecontext</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=897424459A9E2B4E8DA67F197BABD910/Text/@EntryValue">context.Set("ScriptNonce", nonce);&#xD;
+context.Response.Headers.Add("Content-Security-Policy", new[] { string.Format("script-src 'self' 'nonce-{0}'", nonce) });</s:String></wpf:ResourceDictionary>
