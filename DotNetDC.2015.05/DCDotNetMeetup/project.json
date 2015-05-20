@@ -1,0 +1,17 @@
+{
+	"webroot": "wwwroot",
+	"dependencies": {
+		"Microsoft.AspNet.Mvc": "6.0.0-beta4",
+		"Kestrel": "1.0.0-beta4",
+		"Microsoft.AspNet.Hosting": "1.0.0-beta4",
+		"Microsoft.AspNet.Diagnostics": "1.0.0-beta4",
+		"Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta4"
+	},
+	"frameworks": {
+		"dnx451":{},
+		"dnxcore50":{}
+	},
+	"commands": {
+		"kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5005"
+	}
+}
