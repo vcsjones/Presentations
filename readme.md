@@ -28,7 +28,7 @@ limitations under the License.
 
 ##Feedback
 
-If you have any questions, suggestions, or feedback on any of my material, please contact me through [my blog](http://vcsjones.com/contact/).
+If you have any questions, suggestions, or feedback on any of my material, please contact me through twitter [@vcsjones](https://twitter.com/vcsjones).
 
 I can't guarentee that I will see issues opened or pull requests on this repository.
 
