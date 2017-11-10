@@ -1,6 +1,6 @@
-##License
+## License
 
-###Presentation and Slides
+### Presentation and Slides
 
 ![Creative Commons License](http://i.creativecommons.org/l/by/3.0/88x31.png "Creative Commons License")
 
@@ -8,7 +8,7 @@ Presentation Material and Slides by [Kevin Jones](http://vcsjones.com) is licens
 
 Note that individual presentations may have their own separate license that completely supersede this license.
 
-###Code
+### Code
 
 Code for presentations is licensed under Apache 2.0:
 
@@ -26,13 +26,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-##Feedback
+## Feedback
 
 If you have any questions, suggestions, or feedback on any of my material, please contact me through twitter [@vcsjones](https://twitter.com/vcsjones).
 
 I can't guarentee that I will see issues opened or pull requests on this repository.
 
-##Completeness
+## Completeness
 
 Not every presentation I've ever given is here. This may either be because the presentation is owned by someone else,
 the presentation is old and I haven't taken the time to commit it, or because I forgot. If there is a particular 
