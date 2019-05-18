@@ -4,7 +4,7 @@
 
 ![Creative Commons License](http://i.creativecommons.org/l/by/3.0/88x31.png "Creative Commons License")
 
-Presentation Material and Slides by [Kevin Jones](http://vcsjones.com) is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
+Presentation Material and Slides by [Kevin Jones](https://vcsjones.com) is licensed under a [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 
 Note that individual presentations may have their own separate license that completely supersede this license.
 
